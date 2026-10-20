@@ -1,0 +1,167 @@
+{
+  "created_at_utc": "2026-10-19T15:11:27.487647+00:00",
+  "image_size": {
+    "width": 2560,
+    "height": 1440
+  },
+  "source": {
+    "kind": "image",
+    "coordinate_space": "image-pixels"
+  },
+  "languages": [
+    "ch_sim",
+    "en"
+  ],
+  "device": "cuda",
+  "ocr_enabled": true,
+  "min_confidence": 0.2,
+  "canvas_size": 1600,
+  "ocr_ms": 237.27,
+  "result_count": 4,
+  "results": [
+    {
+      "id": 1,
+      "text": "GUI Agent Test",
+      "confidence": 0.7371063595024578,
+      "polygon": [
+        [
+          83.0,
+          93.0
+        ],
+        [
+          492.0,
+          93.0
+        ],
+        [
+          492.0,
+          172.0
+        ],
+        [
+          83.0,
+          172.0
+        ]
+      ],
+      "bbox": [
+        83.0,
+        93.0,
+        492.0,
+        172.0
+      ],
+      "center": [
+        287.5,
+        132.5
+      ],
+      "desktop_polygon": null,
+      "desktop_bbox": null,
+      "desktop_center": null
+    },
+    {
+      "id": 2,
+      "text": "屏幕截图与文字识别",
+      "confidence": 0.8167204567336706,
+      "polygon": [
+        [
+          80.0,
+          240.0
+        ],
+        [
+          585.0,
+          240.0
+        ],
+        [
+          585.0,
+          316.0
+        ],
+        [
+          80.0,
+          316.0
+        ]
+      ],
+      "bbox": [
+        80.0,
+        240.0,
+        585.0,
+        316.0
+      ],
+      "center": [
+        332.5,
+        278.0
+      ],
+      "desktop_polygon": null,
+      "desktop_bbox": null,
+      "desktop_center": null
+    },
+    {
+      "id": 3,
+      "text": "搜索文件",
+      "confidence": 0.8029025793075562,
+      "polygon": [
+        [
+          80.0,
+          390.0
+        ],
+        [
+          313.0,
+          390.0
+        ],
+        [
+          313.0,
+          466.0
+        ],
+        [
+          80.0,
+          466.0
+        ]
+      ],
+      "bbox": [
+        80.0,
+        390.0,
+        313.0,
+        466.0
+      ],
+      "center": [
+        196.5,
+        428.0
+      ],
+      "desktop_polygon": null,
+      "desktop_bbox": null,
+      "desktop_center": null
+    },
+    {
+      "id": 4,
+      "text": "Hello World 12345",
+      "confidence": 0.8223536948459099,
+      "polygon": [
+        [
+          84.0,
+          542.0
+        ],
+        [
+          584.0,
+          542.0
+        ],
+        [
+          584.0,
+          609.0
+        ],
+        [
+          84.0,
+          609.0
+        ]
+      ],
+      "bbox": [
+        84.0,
+        542.0,
+        584.0,
+        609.0
+      ],
+      "center": [
+        334.0,
+        575.5
+      ],
+      "desktop_polygon": null,
+      "desktop_bbox": null,
+      "desktop_center": null
+    }
+  ]
+}

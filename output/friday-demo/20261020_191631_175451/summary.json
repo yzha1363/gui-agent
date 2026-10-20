@@ -1,0 +1,67 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-20T08:16:32.279920+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "failed",
+      "action_sent": true,
+      "verified": false,
+      "observations": [
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0001_step01_before1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0002_step01_after1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0003_step01_after2",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0004_step01_after3",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0005_step01_after4",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0006_step01_after5",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0007_step01_after6",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0008_step01_after7",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0009_step01_after8",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0010_step01_after9",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0011_step01_after10",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0012_step01_after11",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0013_step01_after12",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0014_step01_after13",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0015_step01_after14"
+      ],
+      "target": {
+        "id": 11,
+        "text": "INPUT FIELD",
+        "confidence": 0.8507283967809365,
+        "desktop_center": [
+          322,
+          460
+        ],
+        "desktop_bbox": [
+          230.0,
+          444.0,
+          414.0,
+          477.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.335
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": false,
+        "matches": [],
+        "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0015_step01_after14",
+        "transition_required": true
+      },
+      "error": {
+        "code": "verification_timeout",
+        "message": "Fresh screenshots did not meet the expected condition; input will not be repeated."
+      }
+    }
+  ],
+  "error": {
+    "code": "verification_timeout",
+    "message": "Fresh screenshots did not meet the expected condition; input will not be repeated."
+  },
+  "finished_at_utc": "2026-10-20T08:16:43.642340+00:00"
+}

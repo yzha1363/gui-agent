@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-19T15:13:43.366292+00:00",
+  "image_size": {
+    "width": 800,
+    "height": 600
+  },
+  "source": {
+    "kind": "image"
+  },
+  "languages": [
+    "ch_sim",
+    "en"
+  ],
+  "device": "cuda",
+  "ocr_enabled": true,
+  "min_confidence": 0.2,
+  "canvas_size": 1600,
+  "ocr_ms": 38.98,
+  "result_count": 0,
+  "results": []
+}

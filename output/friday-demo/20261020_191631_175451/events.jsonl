@@ -1,0 +1,19 @@
+{"time_utc": "2026-10-20T08:16:32.281005+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:16:32.601321+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0001_step01_before1"}
+{"time_utc": "2026-10-20T08:16:32.616592+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:16:33.373045+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:16:33.639281+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0002_step01_after1"}
+{"time_utc": "2026-10-20T08:16:34.437932+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0003_step01_after2"}
+{"time_utc": "2026-10-20T08:16:35.208237+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0004_step01_after3"}
+{"time_utc": "2026-10-20T08:16:35.971547+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0005_step01_after4"}
+{"time_utc": "2026-10-20T08:16:36.740166+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0006_step01_after5"}
+{"time_utc": "2026-10-20T08:16:37.508194+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0007_step01_after6"}
+{"time_utc": "2026-10-20T08:16:38.280664+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0008_step01_after7"}
+{"time_utc": "2026-10-20T08:16:39.069752+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0009_step01_after8"}
+{"time_utc": "2026-10-20T08:16:39.855924+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0010_step01_after9"}
+{"time_utc": "2026-10-20T08:16:40.646278+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0011_step01_after10"}
+{"time_utc": "2026-10-20T08:16:41.424645+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0012_step01_after11"}
+{"time_utc": "2026-10-20T08:16:42.193648+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0013_step01_after12"}
+{"time_utc": "2026-10-20T08:16:42.962714+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0014_step01_after13"}
+{"time_utc": "2026-10-20T08:16:43.641777+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191631_175451\\0015_step01_after14"}
+{"time_utc": "2026-10-20T08:16:43.642096+00:00", "event": "workflow_stopped", "status": "failed", "error": {"code": "verification_timeout", "message": "Fresh screenshots did not meet the expected condition; input will not be repeated."}}

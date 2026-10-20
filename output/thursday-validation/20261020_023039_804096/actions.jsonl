@@ -1,0 +1,18 @@
+{"time_utc": "2026-10-19T15:30:44.896173+00:00", "action": "click", "args": {"x": 323, "y": 342, "clicks": 1, "button": "left"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:45.665704+00:00", "action": "click", "args": {"x": 322, "y": 341, "clicks": 1, "button": "right"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:46.422807+00:00", "action": "click", "args": {"x": 322, "y": 341, "clicks": 1, "button": "middle"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:47.465559+00:00", "action": "click", "args": {"x": 322, "y": 341, "clicks": 2, "button": "left"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:48.250101+00:00", "action": "click", "args": {"x": 619, "y": 342, "clicks": 1, "button": "left"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:48.667489+00:00", "action": "type_text", "args": {"length": 20}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:49.190820+00:00", "action": "hotkey", "args": {"keys": ["ctrl", "a"]}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:49.442642+00:00", "action": "type_text", "args": {"length": 12}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:49.725295+00:00", "action": "press", "args": {"key": "end"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:49.977002+00:00", "action": "press", "args": {"key": "left"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:49.998503+00:00", "action": "type_text", "args": {"length": 1}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:50.800557+00:00", "action": "click", "args": {"x": 392, "y": 603, "clicks": 1, "button": "left"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:52.556884+00:00", "action": "scroll", "args": {"clicks": -5, "x": 392, "y": 603}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:54.321462+00:00", "action": "scroll", "args": {"clicks": 5, "x": 392, "y": 603}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:56.096705+00:00", "action": "drag", "args": {"from": [718, 566], "to": [978, 656], "duration": 1.0}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:56.128998+00:00", "action": "click", "args": {"x": -10, "y": -10, "clicks": 1, "button": "left"}, "status": "failed", "error": "ControlError: This PyAutoGUI backend supports only primary-monitor coordinates."}
+{"time_utc": "2026-10-19T15:30:56.380545+00:00", "action": "press", "args": {"key": "esc"}, "status": "sent", "error": null}
+{"time_utc": "2026-10-19T15:30:56.581122+00:00", "action": "click", "args": {"x": 322, "y": 341, "clicks": 1, "button": "left"}, "status": "failed", "error": "StopRequested: Escape or stop requested; no further input will be sent."}

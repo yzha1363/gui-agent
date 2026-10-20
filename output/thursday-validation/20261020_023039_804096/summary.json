@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "checks": {
+    "ocr_center_within_button": true,
+    "ocr_click": true,
+    "right_click": true,
+    "middle_click": true,
+    "double_click": true,
+    "unicode_input": true,
+    "hotkey_replace": true,
+    "single_key": true,
+    "scroll_down": true,
+    "scroll_up": true,
+    "drag": true,
+    "reject_out_of_bounds": true,
+    "stop_blocks_input": true
+  },
+  "directory": "output\\thursday-validation\\20261020_023039_804096",
+  "target": {
+    "id": 5,
+    "text": "CLICK TARGET",
+    "confidence": 0.9837389808870652,
+    "desktop_center": [
+      323,
+      342
+    ],
+    "desktop_bbox": [
+      222.0,
+      327.0,
+      424.0,
+      357.0
+    ]
+  },
+  "coordinate_error_px": [
+    1,
+    1
+  ],
+  "final_state": {
+    "clicks": 3,
+    "text": "Hello GUI 中X文",
+    "scroll": [
+      0.0,
+      0.10458333333333333
+    ],
+    "drag": [
+      350,
+      180
+    ],
+    "buttons": [
+      "right",
+      "middle",
+      "double"
+    ],
+    "target": [
+      322,
+      341
+    ],
+    "input": [
+      813,
+      403
+    ],
+    "scroll_center": [
+      392,
+      603
+    ],
+    "canvas_origin": [
+      628,
+      476
+    ],
+    "region": [
+      168,
+      131,
+      1000,
+      760
+    ]
+  }
+}

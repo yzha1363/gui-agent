@@ -1,0 +1,12 @@
+{"time_utc": "2026-10-20T08:17:57.598106+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:17:57.898880+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0001_step01_before1"}
+{"time_utc": "2026-10-20T08:17:57.915419+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:17:58.674212+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:17:58.947063+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0002_step01_after1"}
+{"time_utc": "2026-10-20T08:17:59.714300+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0003_step01_after2"}
+{"time_utc": "2026-10-20T08:18:00.482966+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0004_step01_after3"}
+{"time_utc": "2026-10-20T08:18:01.250999+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0005_step01_after4"}
+{"time_utc": "2026-10-20T08:18:02.019261+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0006_step01_after5"}
+{"time_utc": "2026-10-20T08:18:02.790910+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0007_step01_after6"}
+{"time_utc": "2026-10-20T08:18:03.561135+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0008_step01_after7"}
+{"time_utc": "2026-10-20T08:18:04.336849+00:00", "event": "workflow_stopped", "status": "failed", "error": {"code": "ControlError", "message": "Foreground window must be 'GUI Agent Friday Demo'; found 'GUI Agent Thursday Test'."}}

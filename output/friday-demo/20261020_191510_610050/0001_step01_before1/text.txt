@@ -1,0 +1,13 @@
+GUI Agent Friday Workflow
+Scenario: normal
+WAITING
+BEGINRUN
+STOP
+NORMAL
+DUPLICATE
+MISSING
+NO CHANGE
+INPUT FIELD
+SUBMIT
+Running. Waiting for obsered results after each action..
+Escape stops the WNOTKfIOWKeep this test window in the foreground。

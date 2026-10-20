@@ -1,0 +1,18 @@
+{"time_utc": "2026-10-20T08:18:39.097938+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:18:39.765945+00:00", "event": "observation", "step": "focus_input", "directory": "output\\friday\\20261020_191835_558583\\0001_step01_before1"}
+{"time_utc": "2026-10-20T08:18:39.783385+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:18:40.541212+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:18:40.815547+00:00", "event": "observation", "step": "focus_input", "directory": "output\\friday\\20261020_191835_558583\\0002_step01_after1"}
+{"time_utc": "2026-10-20T08:18:40.816408+00:00", "event": "step_verified", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:18:40.816863+00:00", "event": "step_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-20T08:18:41.081938+00:00", "event": "observation", "step": "enter_text", "directory": "output\\friday\\20261020_191835_558583\\0003_step02_before1"}
+{"time_utc": "2026-10-20T08:18:41.082058+00:00", "event": "dispatch_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-20T08:18:41.460087+00:00", "event": "input_sent", "step": "enter_text"}
+{"time_utc": "2026-10-20T08:18:41.743778+00:00", "event": "observation", "step": "enter_text", "directory": "output\\friday\\20261020_191835_558583\\0004_step02_after1"}
+{"time_utc": "2026-10-20T08:18:41.744577+00:00", "event": "step_verified", "step": "enter_text"}
+{"time_utc": "2026-10-20T08:18:41.744954+00:00", "event": "step_started", "step": "submit_and_confirm", "action": "click_text"}
+{"time_utc": "2026-10-20T08:18:42.019906+00:00", "event": "observation", "step": "submit_and_confirm", "directory": "output\\friday\\20261020_191835_558583\\0005_step03_before1"}
+{"time_utc": "2026-10-20T08:18:42.036261+00:00", "event": "dispatch_started", "step": "submit_and_confirm", "action": "click_text"}
+{"time_utc": "2026-10-20T08:18:42.794554+00:00", "event": "input_sent", "step": "submit_and_confirm"}
+{"time_utc": "2026-10-20T08:18:43.101224+00:00", "event": "observation", "step": "submit_and_confirm", "directory": "output\\friday\\20261020_191835_558583\\0006_step03_after1"}
+{"time_utc": "2026-10-20T08:18:43.102181+00:00", "event": "step_verified", "step": "submit_and_confirm"}

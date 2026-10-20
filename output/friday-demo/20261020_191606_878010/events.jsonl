@@ -1,0 +1,8 @@
+{"time_utc": "2026-10-20T08:16:07.973119+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:16:08.263769+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191606_878010\\0001_step01_before1"}
+{"time_utc": "2026-10-20T08:16:08.263948+00:00", "event": "observation_retry", "step": "focus_input", "attempt": 1, "error": "No text target matched: inputfield"}
+{"time_utc": "2026-10-20T08:16:09.020321+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191606_878010\\0002_step01_before2"}
+{"time_utc": "2026-10-20T08:16:09.020641+00:00", "event": "observation_retry", "step": "focus_input", "attempt": 2, "error": "No text target matched: inputfield"}
+{"time_utc": "2026-10-20T08:16:09.777612+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191606_878010\\0003_step01_before3"}
+{"time_utc": "2026-10-20T08:16:09.777867+00:00", "event": "observation_retry", "step": "focus_input", "attempt": 3, "error": "No text target matched: inputfield"}
+{"time_utc": "2026-10-20T08:16:09.777963+00:00", "event": "workflow_stopped", "status": "failed", "error": {"code": "target_unavailable", "message": "No text target matched: inputfield"}}

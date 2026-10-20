@@ -1,0 +1,18 @@
+{"time_utc": "2026-10-20T08:15:16.144148+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:15:17.185046+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191510_610050\\0001_step01_before1"}
+{"time_utc": "2026-10-20T08:15:17.201773+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:15:17.960093+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:15:18.230088+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191510_610050\\0002_step01_after1"}
+{"time_utc": "2026-10-20T08:15:18.231175+00:00", "event": "step_verified", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:15:18.231583+00:00", "event": "step_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-20T08:15:18.502607+00:00", "event": "observation", "step": "enter_text", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191510_610050\\0003_step02_before1"}
+{"time_utc": "2026-10-20T08:15:18.502809+00:00", "event": "dispatch_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-20T08:15:18.882028+00:00", "event": "input_sent", "step": "enter_text"}
+{"time_utc": "2026-10-20T08:15:19.177420+00:00", "event": "observation", "step": "enter_text", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191510_610050\\0004_step02_after1"}
+{"time_utc": "2026-10-20T08:15:19.178111+00:00", "event": "step_verified", "step": "enter_text"}
+{"time_utc": "2026-10-20T08:15:19.178598+00:00", "event": "step_started", "step": "submit_and_confirm", "action": "click_text"}
+{"time_utc": "2026-10-20T08:15:19.463300+00:00", "event": "observation", "step": "submit_and_confirm", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191510_610050\\0005_step03_before1"}
+{"time_utc": "2026-10-20T08:15:19.480181+00:00", "event": "dispatch_started", "step": "submit_and_confirm", "action": "click_text"}
+{"time_utc": "2026-10-20T08:15:20.237679+00:00", "event": "input_sent", "step": "submit_and_confirm"}
+{"time_utc": "2026-10-20T08:15:20.544010+00:00", "event": "observation", "step": "submit_and_confirm", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191510_610050\\0006_step03_after1"}
+{"time_utc": "2026-10-20T08:15:20.544720+00:00", "event": "step_verified", "step": "submit_and_confirm"}

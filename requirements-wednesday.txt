@@ -1,0 +1,4 @@
+# Install CUDA torch first as documented in CUDA环境配置说明.md.
+mss==10.2.0
+easyocr==1.7.2
+# EasyOCR installs opencv-python-headless. Avoid installing two cv2 distributions.

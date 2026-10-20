@@ -1,0 +1,29 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-20T08:16:07.972291+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "failed",
+      "action_sent": false,
+      "verified": false,
+      "observations": [
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191606_878010\\0001_step01_before1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191606_878010\\0002_step01_before2",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191606_878010\\0003_step01_before3"
+      ],
+      "error": {
+        "code": "target_unavailable",
+        "message": "No text target matched: inputfield"
+      }
+    }
+  ],
+  "error": {
+    "code": "target_unavailable",
+    "message": "No text target matched: inputfield"
+  },
+  "finished_at_utc": "2026-10-20T08:16:09.778096+00:00"
+}

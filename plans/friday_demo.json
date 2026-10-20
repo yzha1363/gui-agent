@@ -1,0 +1,23 @@
+{
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "text": "INPUT FIELD",
+      "expect": {"text": "INPUT READY", "transition": true}
+    },
+    {
+      "name": "enter_text",
+      "action": "type_text",
+      "text": "Hello GUI 123 中文测试",
+      "expect": {"text": "Hello GUI 123 中文测试", "min_confidence": 0.3, "transition": true}
+    },
+    {
+      "name": "submit_and_confirm",
+      "action": "click_text",
+      "text": "SUBMIT",
+      "expect": {"text": "SUBMITTED Hello GUI 123 中文测试", "min_confidence": 0.3, "transition": true}
+    }
+  ]
+}

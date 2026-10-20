@@ -1,0 +1,58 @@
+{
+  "status": "aborted",
+  "success": false,
+  "started_at_utc": "2026-10-20T08:17:18.448697+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "aborted",
+      "action_sent": true,
+      "verified": false,
+      "observations": [
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0001_step01_before1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0002_step01_after1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0003_step01_after2",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0004_step01_after3",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0005_step01_after4",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0006_step01_after5"
+      ],
+      "target": {
+        "id": 11,
+        "text": "INPUT FIELD",
+        "confidence": 0.8507283967809365,
+        "desktop_center": [
+          322,
+          460
+        ],
+        "desktop_bbox": [
+          230.0,
+          444.0,
+          414.0,
+          477.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.313
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": false,
+        "matches": [],
+        "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0006_step01_after5",
+        "transition_required": true
+      },
+      "error": {
+        "code": "StopRequested",
+        "message": "Escape or stop requested; no further input will be sent."
+      }
+    }
+  ],
+  "error": {
+    "code": "StopRequested",
+    "message": "Escape or stop requested; no further input will be sent."
+  },
+  "finished_at_utc": "2026-10-20T08:17:23.712656+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-20T08:15:46.216245+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "failed",
+      "action_sent": false,
+      "verified": false,
+      "observations": [
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191545_104174\\0001_step01_before1"
+      ],
+      "error": {
+        "code": "AmbiguousTarget",
+        "message": "2 targets matched; specify a 1-based occurrence. Candidates: [{'id': 10, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [322, 460], 'desktop_bbox': [230.0, 444.0, 414.0, 477.0]}, {'id': 11, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [648, 460], 'desktop_bbox': [556.0, 444.0, 740.0, 477.0]}]"
+      }
+    }
+  ],
+  "error": {
+    "code": "AmbiguousTarget",
+    "message": "2 targets matched; specify a 1-based occurrence. Candidates: [{'id': 10, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [322, 460], 'desktop_bbox': [230.0, 444.0, 414.0, 477.0]}, {'id': 11, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [648, 460], 'desktop_bbox': [556.0, 444.0, 740.0, 477.0]}]"
+  },
+  "finished_at_utc": "2026-10-20T08:15:46.545058+00:00"
+}

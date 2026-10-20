@@ -1,0 +1,77 @@
+{
+  "passed": false,
+  "checks": {
+    "ocr_center_within_button": true,
+    "ocr_click": true,
+    "right_click": true,
+    "middle_click": true,
+    "double_click": true,
+    "unicode_input": false,
+    "hotkey_replace": false,
+    "single_key": false,
+    "scroll_down": false,
+    "scroll_up": true,
+    "drag": true,
+    "reject_out_of_bounds": true,
+    "stop_blocks_input": true
+  },
+  "directory": "output\\thursday-validation\\20261020_022752_753185",
+  "target": {
+    "id": 5,
+    "text": "CLICK TARGET",
+    "confidence": 0.9837389808870652,
+    "desktop_center": [
+      220,
+      294
+    ],
+    "desktop_bbox": [
+      119.0,
+      279.0,
+      321.0,
+      309.0
+    ]
+  },
+  "coordinate_error_px": [
+    1,
+    1
+  ],
+  "final_state": {
+    "clicks": 3,
+    "text": "H饿了咯GUI 中X文",
+    "scroll": [
+      0.0,
+      0.10458333333333333
+    ],
+    "drag": [
+      350,
+      180
+    ],
+    "buttons": [
+      "right",
+      "middle",
+      "double"
+    ],
+    "target": [
+      219,
+      293
+    ],
+    "input": [
+      710,
+      355
+    ],
+    "scroll_center": [
+      289,
+      555
+    ],
+    "canvas_origin": [
+      525,
+      428
+    ],
+    "region": [
+      65,
+      83,
+      1000,
+      760
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.pyc
+models/
+tmp/
+
+# Keep reproducible experimental evidence and final deliverables.
+# General desktop captures stay local.
+output/*
+!output/wednesday-validation/
+!output/thursday-validation/
+!output/friday/
+!output/friday-demo/
+!output/project-checks/
+!output/reports/
+!output/deliverables/
+!output/friday-test-summary.json
+!output/saturday-summary.json
+!output/个人计划.docx
+
+# Editor/Office transient files and local credentials.
+~$*
+*.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx

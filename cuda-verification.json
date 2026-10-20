@@ -1,0 +1,31 @@
+{
+  "python": "3.13.7",
+  "python_executable": "D:\\study\\\u5b9e\u4e60\\.venv\\Scripts\\python.exe",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "cuda_runtime": "12.8",
+  "cudnn": 91002,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "vram_gb": 11.91,
+  "compute_capability": [
+    12,
+    0
+  ],
+  "compiled_architectures": [
+    "sm_61",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "checks": [
+    "GPU matrix multiply matches CPU",
+    "autograd",
+    "cuDNN convolution",
+    "torchvision CUDA NMS"
+  ],
+  "status": "PASS"
+}

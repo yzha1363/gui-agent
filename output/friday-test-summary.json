@@ -1,0 +1,75 @@
+{
+  "unit_tests": {
+    "passed": 30,
+    "failed": 0
+  },
+  "plan_validation": "PASS",
+  "dependency_check": "PASS",
+  "desktop_cases": [
+    {
+      "case": "normal",
+      "passed": true,
+      "workflow_status": "completed",
+      "error_code": null,
+      "sent_actions": 3,
+      "summary": "output\\friday-demo\\20261020_191510_610050\\summary.json"
+    },
+    {
+      "case": "duplicate",
+      "passed": true,
+      "workflow_status": "failed",
+      "error_code": "AmbiguousTarget",
+      "sent_actions": 0,
+      "summary": "output\\friday-demo\\20261020_191545_104174\\summary.json"
+    },
+    {
+      "case": "missing",
+      "passed": true,
+      "workflow_status": "failed",
+      "error_code": "target_unavailable",
+      "sent_actions": 0,
+      "summary": "output\\friday-demo\\20261020_191606_878010\\summary.json"
+    },
+    {
+      "case": "timeout",
+      "passed": true,
+      "workflow_status": "failed",
+      "error_code": "verification_timeout",
+      "sent_actions": 1,
+      "summary": "output\\friday-demo\\20261020_191631_175451\\summary.json"
+    },
+    {
+      "case": "escape",
+      "passed": true,
+      "workflow_status": "aborted",
+      "error_code": "StopRequested",
+      "sent_actions": 1,
+      "summary": "output\\friday-demo\\20261020_191700_877613\\summary.json"
+    },
+    {
+      "case": "stop_button",
+      "passed": true,
+      "workflow_status": "aborted",
+      "error_code": "StopRequested",
+      "sent_actions": 1,
+      "summary": "output\\friday-demo\\20261020_191717_388607\\summary.json"
+    },
+    {
+      "case": "focus_loss",
+      "passed": true,
+      "workflow_status": "failed",
+      "error_code": "ControlError",
+      "sent_actions": 1,
+      "summary": "output\\friday-demo\\20261020_191756_539508\\summary.json"
+    },
+    {
+      "case": "cli",
+      "passed": true,
+      "workflow_status": "completed",
+      "error_code": null,
+      "sent_actions": 3,
+      "summary": "output\\friday\\20261020_191835_558583\\summary.json"
+    }
+  ],
+  "all_passed": true
+}

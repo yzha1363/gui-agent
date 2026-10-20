@@ -1,0 +1,13 @@
+GUI Agent Friday Workflow
+Scenario: normal
+INPUT READY
+BEGIN RUN
+STOP
+NORMAL
+DUPLICATE
+MISSING
+NO CHANGE
+INPUT FIELD
+SUBMIT
+FAILED ControlError- 20261020 191756,539508
+Escape stops the WNOTKfIOWKeep this test window in the foreground。

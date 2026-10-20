@@ -1,0 +1,60 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-20T08:17:57.597260+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "failed",
+      "action_sent": true,
+      "verified": false,
+      "observations": [
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0001_step01_before1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0002_step01_after1",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0003_step01_after2",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0004_step01_after3",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0005_step01_after4",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0006_step01_after5",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0007_step01_after6",
+        "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0008_step01_after7"
+      ],
+      "target": {
+        "id": 11,
+        "text": "INPUT FIELD",
+        "confidence": 0.8507283967809365,
+        "desktop_center": [
+          322,
+          460
+        ],
+        "desktop_bbox": [
+          230.0,
+          444.0,
+          414.0,
+          477.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.317
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": false,
+        "matches": [],
+        "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191756_539508\\0008_step01_after7",
+        "transition_required": true
+      },
+      "error": {
+        "code": "ControlError",
+        "message": "Foreground window must be 'GUI Agent Friday Demo'; found 'GUI Agent Thursday Test'."
+      }
+    }
+  ],
+  "error": {
+    "code": "ControlError",
+    "message": "Foreground window must be 'GUI Agent Friday Demo'; found 'GUI Agent Thursday Test'."
+  },
+  "finished_at_utc": "2026-10-20T08:18:04.337238+00:00"
+}

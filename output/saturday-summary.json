@@ -1,0 +1,21 @@
+{
+  "saturday_completed": true,
+  "source_checks": "output\\project-checks\\20261020_185610_160361\\summary.json",
+  "unit_tests_passed": 30,
+  "historical_desktop_cases_verified": 8,
+  "desktop_cases_rerun": false,
+  "desktop_input_sent": false,
+  "archive": "output\\deliverables\\gui-agent-week1-20261020_185656_316789.zip",
+  "archive_bytes": 74730,
+  "archive_sha256": "04ab91a956aca280771d01aba0cb39514209225c5c3d2adba856fede6ec32d5b",
+  "source_and_evidence_files": 57,
+  "manifest_file_count": 1,
+  "extracted_checks": "tmp\\saturday-package-check\\20261020_185656\\output\\project-checks\\20261020_185718_522229\\summary.json",
+  "extracted_checks_passed": true,
+  "fresh_environment_install_tested": false,
+  "open_items": [
+    "GUI Agent technical research report",
+    "Physical multi-monitor and system display scale tests",
+    "Git repository and remote backup"
+  ]
+}

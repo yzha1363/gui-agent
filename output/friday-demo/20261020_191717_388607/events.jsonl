@@ -1,0 +1,10 @@
+{"time_utc": "2026-10-20T08:17:18.449479+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:17:18.745885+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0001_step01_before1"}
+{"time_utc": "2026-10-20T08:17:18.763075+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-20T08:17:19.521341+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-20T08:17:19.807215+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0002_step01_after1"}
+{"time_utc": "2026-10-20T08:17:20.575507+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0003_step01_after2"}
+{"time_utc": "2026-10-20T08:17:21.347146+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0004_step01_after3"}
+{"time_utc": "2026-10-20T08:17:22.135877+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0005_step01_after4"}
+{"time_utc": "2026-10-20T08:17:22.923774+00:00", "event": "observation", "step": "focus_input", "directory": "D:\\study\\实习\\output\\friday-demo\\20261020_191717_388607\\0006_step01_after5"}
+{"time_utc": "2026-10-20T08:17:23.712243+00:00", "event": "workflow_stopped", "status": "aborted", "error": {"code": "StopRequested", "message": "Escape or stop requested; no further input will be sent."}}

@@ -1,0 +1,4 @@
+GUI Agent Test
+屏幕截图与文字识别
+搜索文件
+Hello World 12345

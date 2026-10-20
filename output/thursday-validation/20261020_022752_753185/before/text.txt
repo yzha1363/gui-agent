@@ -1,0 +1,31 @@
+GUI Agent Control Test
+Loading local OCR model and checking screenshot coordinates。
+START TEST
+OCR Click Target
+CLICK TARGET
+TYPE HERE
+Scrollarea
+the blue square
+Line 01
+scroll test
+Line 02
+scroll test
+Line 03
+scroll test
+Line 04
+scroll test
+Line 05
+scroll test
+Line 06
+scroll test
+Line 07
+scroll test
+Line 08
+scroll test
+Line 09
+scroll test
+Line 10
+scroll test
+Escape stops input Primary-monitor corners trigger PyAutoGUI fail-safe。
+Results are saved under outputithursday-validation
+Drag

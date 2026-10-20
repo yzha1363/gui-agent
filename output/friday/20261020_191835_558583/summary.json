@@ -1,0 +1,119 @@
+{
+  "status": "completed",
+  "success": true,
+  "started_at_utc": "2026-10-20T08:18:39.096984+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\friday\\20261020_191835_558583\\0001_step01_before1",
+        "output\\friday\\20261020_191835_558583\\0002_step01_after1"
+      ],
+      "target": {
+        "id": 10,
+        "text": "INPUT FIELD",
+        "confidence": 0.8507283967809365,
+        "desktop_center": [
+          322,
+          460
+        ],
+        "desktop_bbox": [
+          230.0,
+          444.0,
+          414.0,
+          477.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.685
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "matches": [
+          {
+            "id": 3,
+            "text": "INPUT READY",
+            "confidence": 0.8586818578887077
+          }
+        ],
+        "directory": "output\\friday\\20261020_191835_558583\\0002_step01_after1",
+        "transition_required": true
+      }
+    },
+    {
+      "name": "enter_text",
+      "action": "type_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\friday\\20261020_191835_558583\\0003_step02_before1",
+        "output\\friday\\20261020_191835_558583\\0004_step02_after1"
+      ],
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "matches": [
+          {
+            "id": 12,
+            "text": "Hello GUI 123 中文测试",
+            "confidence": 0.46807523638566473
+          }
+        ],
+        "directory": "output\\friday\\20261020_191835_558583\\0004_step02_after1",
+        "transition_required": true
+      }
+    },
+    {
+      "name": "submit_and_confirm",
+      "action": "click_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\friday\\20261020_191835_558583\\0005_step03_before1",
+        "output\\friday\\20261020_191835_558583\\0006_step03_after1"
+      ],
+      "target": {
+        "id": 11,
+        "text": "SUBMIT",
+        "confidence": 0.9979230405863858,
+        "desktop_center": [
+          1029,
+          461
+        ],
+        "desktop_bbox": [
+          972.0,
+          445.0,
+          1086.0,
+          477.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.291
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "matches": [
+          {
+            "id": 13,
+            "text": "SUBMITTED Hello GUI 123 中文测试",
+            "confidence": 0.6634583586146422
+          }
+        ],
+        "directory": "output\\friday\\20261020_191835_558583\\0006_step03_after1",
+        "transition_required": true
+      }
+    }
+  ],
+  "finished_at_utc": "2026-10-20T08:18:43.102230+00:00"
+}

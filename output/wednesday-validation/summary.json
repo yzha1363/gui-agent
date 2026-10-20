@@ -1,0 +1,70 @@
+{
+  "device": "cuda",
+  "cases": [
+    {
+      "size": [
+        1280,
+        720
+      ],
+      "simulated_text_scale": 1,
+      "checks": {
+        "english": true,
+        "chinese": true,
+        "numbers": true,
+        "short_label": true,
+        "bounds": true
+      },
+      "recognized_texts": [
+        "GUI Agent Test",
+        "屏幕截图与文字识别",
+        "搜索文件",
+        "Hello World 12345"
+      ],
+      "ocr_ms": 15133.9
+    },
+    {
+      "size": [
+        1920,
+        1080
+      ],
+      "simulated_text_scale": 1.25,
+      "checks": {
+        "english": true,
+        "chinese": true,
+        "numbers": true,
+        "short_label": true,
+        "bounds": true
+      },
+      "recognized_texts": [
+        "GUI Agent Test",
+        "屏幕截图与文字识别",
+        "搜索文件",
+        "Hello World 12345"
+      ],
+      "ocr_ms": 257.62
+    },
+    {
+      "size": [
+        2560,
+        1440
+      ],
+      "simulated_text_scale": 1.5,
+      "checks": {
+        "english": true,
+        "chinese": true,
+        "numbers": true,
+        "short_label": true,
+        "bounds": true
+      },
+      "recognized_texts": [
+        "GUI Agent Test",
+        "屏幕截图与文字识别",
+        "搜索文件",
+        "Hello World 12345"
+      ],
+      "ocr_ms": 237.27
+    }
+  ],
+  "blank_result_count": 0,
+  "passed": true
+}
