@@ -1,0 +1,31 @@
+{
+  "all_passed": true,
+  "client_date": "2026-10-27",
+  "timezone": "Australia/Sydney",
+  "new_data_tests": 23,
+  "by_test_class": {
+    "AdapterTests": 15,
+    "DataPipelineTests": 8
+  },
+  "full_project_tests": 83,
+  "full_project_check": "output/project-checks/20261027_020101_200949/summary.json",
+  "real_data_records": 76,
+  "real_image_count": 44,
+  "real_data_audit": "passed",
+  "reproduction_equal_jsonl_and_images": true,
+  "reproduction_directory": "tmp/week2/repro-final",
+  "visual_inspection": [
+    "preview.png",
+    "ScreenAgent source action at (487,193) within the search field"
+  ],
+  "desktop_input_sent": false,
+  "new_third_party_dependencies": false,
+  "final_audit": {
+    "passed": true,
+    "records_checked": 76,
+    "task_leakage": false,
+    "image_leakage": false,
+    "asset_hashes_verified": true,
+    "split_files_match_records": true
+  }
+}

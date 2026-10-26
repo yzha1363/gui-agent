@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-10-27",
+  "selection_purpose": "Small local development sample for week-two Monday, not full benchmark preparation",
+  "sources": [
+    {
+      "name": "screenagent",
+      "repository": "https://github.com/niuzaisheng/ScreenAgent",
+      "license_reference": "https://github.com/niuzaisheng/ScreenAgent/blob/main/LICENSE",
+      "dataset_license_label": "Apache-2.0",
+      "sample": "First four positive translated records from each of six lexicographically sorted training sessions; 24 screenshots and records",
+      "code_is_not_dataset_license": true
+    },
+    {
+      "name": "mind2web",
+      "repository": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web",
+      "license_reference": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/blob/main/README.md",
+      "dataset_license_label": "openrail, as declared in this multimodal dataset card",
+      "sample": "Training rows only: offsets 0,64,128,256,512, four rows each; 20 screenshots and records",
+      "note": "Do not substitute the original text/HTML Mind2Web CC-BY label for the multimodal release's card. No official test split is downloaded."
+    },
+    {
+      "name": "webarena",
+      "repository": "https://github.com/web-arena-x/webarena",
+      "license_reference": "https://github.com/web-arena-x/webarena/blob/main/LICENSE",
+      "dataset_license_label": "Apache-2.0 repository license",
+      "sample": "32 task configurations spread over config_files/test.raw.json",
+      "usage": "Evaluation only. Task configuration is not a screenshot/action demonstration."
+    }
+  ],
+  "redistribution": "Raw samples and derivatives remain local and are ignored by Git. Source attribution and source notices are retained."
+}

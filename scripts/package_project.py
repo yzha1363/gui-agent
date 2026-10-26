@@ -8,7 +8,7 @@ from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_DIRECTORIES = ['gui_perception', 'gui_control', 'gui_workflow', 'plans', 'tests', 'scripts', 'docs']
+SOURCE_DIRECTORIES = ['gui_perception', 'gui_control', 'gui_workflow', 'gui_data', 'plans', 'tests', 'scripts', 'docs']
 
 def source_files():
     files = {path for pattern in ['*.py', '*.md', 'requirements*.txt', '.gitignore'] for path in ROOT.glob(pattern)}

@@ -18,6 +18,11 @@ output/*
 !output/saturday-summary.json
 !output/个人计划.docx
 !output/revision/
+!output/week2-monday/
+
+# Downloaded public data and derivatives stay local with their source licenses.
+data/week2/raw/
+data/week2/processed/
 
 # Editor/Office transient files and local credentials.
 ~$*

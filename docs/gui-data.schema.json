@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gui-agent:dataset-record:1.0",
+  "title": "GUI Agent offline sample v1",
+  "type": "object",
+  "required": ["schema_version", "id", "group_id", "record_type", "instruction", "source", "observation", "label", "verification", "execution_eligible", "quality", "split"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string", "minLength": 1},
+    "group_id": {"type": "string", "minLength": 1},
+    "component_id": {"type": "string", "minLength": 1},
+    "record_type": {"enum": ["action", "plan", "reflection", "task"]},
+    "instruction": {"type": "string", "minLength": 1},
+    "execution_eligible": {"const": false},
+    "split": {"enum": ["train", "validation", "evaluation"]},
+    "source": {
+      "type": "object",
+      "required": ["name", "revision", "official_split", "license", "origin", "raw_path", "raw_sha256"],
+      "properties": {
+        "name": {"enum": ["screenagent", "mind2web", "webarena"]},
+        "revision": {"type": "string", "minLength": 1},
+        "official_split": {"type": "string", "minLength": 1},
+        "license": {"type": "string", "minLength": 1},
+        "origin": {"type": "string", "minLength": 1},
+        "raw_path": {"type": "string", "minLength": 1},
+        "raw_sha256": {"type": "string", "minLength": 1}
+      }
+    },
+    "observation": {
+      "type": "object", "required": ["image", "context"],
+      "properties": {"image": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/image"}]}, "context": {"type": "object"}}
+    },
+    "label": {
+      "type": "object", "required": ["actions"],
+      "properties": {"actions": {"type": "array", "items": {"$ref": "#/$defs/action"}}, "evaluation": {"type": "object"}}
+    },
+    "verification": {"type": "object", "required": ["independent_postcondition_available"],
+      "properties": {"independent_postcondition_available": {"const": false}, "reason": {"type": "string"}}},
+    "quality": {"type": "object", "required": ["warnings"], "properties": {"warnings": {"type": "array", "items": {"type": "string"}}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"record_type": {"const": "task"}}},
+     "then": {"properties": {"split": {"const": "evaluation"}, "observation": {"properties": {"image": {"type": "null"}}}, "label": {"properties": {"actions": {"maxItems": 0}}}}},
+     "else": {"required": ["component_id"], "properties": {"observation": {"properties": {"image": {"$ref": "#/$defs/image"}}}, "label": {"properties": {"actions": {"minItems": 1}}}}}}
+  ],
+  "$defs": {
+    "point": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "minimum": 0}},
+    "image": {
+      "type": "object",
+      "required": ["path", "width", "height", "original_width", "original_height", "original_path", "original_sha256", "scale_xy", "sha256", "pixel_sha256", "coordinate_space", "desktop_origin"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+        "original_width": {"type": "integer", "minimum": 1}, "original_height": {"type": "integer", "minimum": 1},
+        "scale_xy": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "exclusiveMinimum": 0}},
+        "coordinate_space": {"const": "image_pixels"}, "desktop_origin": {"type": "null"}
+      }
+    },
+    "action": {
+      "type": "object", "required": ["type"],
+      "properties": {
+        "type": {"enum": ["click", "move", "drag", "scroll", "type_text", "press", "hotkey", "wait", "plan", "reflect", "select_option", "hover"]},
+        "point": {"$ref": "#/$defs/point"}, "from": {"$ref": "#/$defs/point"}, "to": {"$ref": "#/$defs/point"},
+        "text": {"type": "string"}, "target": {"type": "object"}
+      }
+    }
+  }
+}

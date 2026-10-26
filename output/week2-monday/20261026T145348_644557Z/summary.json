@@ -1,0 +1,97 @@
+{
+  "processed": "D:\\study\\实习\\data\\week2\\processed\\20261026T145348_644557Z",
+  "raw_bundle": "D:\\study\\实习\\data\\week2\\raw\\20261026T145007Z",
+  "counts": {
+    "downloaded_records": 76,
+    "accepted_before_dedup": 76,
+    "records": 76,
+    "rejected": 0,
+    "duplicates": 0,
+    "by_source": {
+      "mind2web": 20,
+      "screenagent": 24,
+      "webarena": 32
+    },
+    "by_record_type": {
+      "action": 32,
+      "plan": 6,
+      "reflection": 6,
+      "task": 32
+    },
+    "by_split": {
+      "train": 35,
+      "validation": 9,
+      "evaluation": 32
+    },
+    "by_action_type": {
+      "click": 23,
+      "type_text": 7,
+      "plan": 24,
+      "press": 3,
+      "reflect": 6,
+      "move": 2,
+      "drag": 2
+    },
+    "rejection_reasons": {},
+    "unique_images": 44
+  },
+  "audit": {
+    "passed": true,
+    "records_checked": 76,
+    "task_leakage": false,
+    "image_leakage": false,
+    "asset_hashes_verified": true,
+    "split_files_match_records": true
+  },
+  "sources": {
+    "screenagent": {
+      "repository": "https://github.com/niuzaisheng/ScreenAgent",
+      "revision": "2312c852908dda5fbc43d903fad5929a9dec649d",
+      "official_split": "train",
+      "license": "Apache-2.0",
+      "usage": "local_research"
+    },
+    "webarena": {
+      "repository": "https://github.com/web-arena-x/webarena",
+      "revision": "dce04686a56253aefba7b18a4fa0937cf1dc987b",
+      "official_split": "benchmark",
+      "license": "Apache-2.0 (repository)",
+      "usage": "evaluation_only"
+    },
+    "mind2web": {
+      "repository": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web",
+      "revision": "1b4c6a8cf9f77b7a5e0d641959935c80c4a05889",
+      "official_split": "train",
+      "license": "openrail",
+      "usage": "local_research",
+      "revision_verification": "Every screenshot asset URL must contain repository revision; row response is also hashed."
+    }
+  },
+  "split_policy": {
+    "seed": 42,
+    "validation_ratio_requested": 0.2,
+    "independent_components": 13,
+    "validation_components": 3,
+    "warning": null
+  },
+  "by_source_split": {
+    "mind2web": {
+      "train": 19,
+      "validation": 1
+    },
+    "screenagent": {
+      "train": 16,
+      "validation": 8
+    },
+    "webarena": {
+      "evaluation": 32
+    }
+  },
+  "limitations": [
+    "Development sample, not full data or a representative benchmark.",
+    "Source task labels and instructions are untrusted data; no actions are executed.",
+    "Mind2Web DOM/CSS boxes are not converted to screenshot or live desktop click points.",
+    "WebArena task descriptions remain evaluation-only; no screenshots/actions are fabricated.",
+    "No independent post-action state labels were invented."
+  ]
+}
