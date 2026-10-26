@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-10-26T10:42:14.578943+00:00",
+  "original_scale_percent": 100,
+  "restored_scale_percent": 100,
+  "restoration_verified_by": "Windows Display Settings UI and a new 96-DPI demo window completing all three steps",
+  "restored_normal_summary": "output/revision/system/restored-100/20261026_213438_605990/summary.json",
+  "verified_scales": [
+    100,
+    125
+  ],
+  "physical_resolution": [
+    1920,
+    1080
+  ],
+  "windows_preset_options_observed": [
+    100,
+    125,
+    150,
+    175
+  ],
+  "scale_200_status": "pending at user request; custom scaling was not applied",
+  "normal_scenarios": {
+    "100": true,
+    "125": true
+  }
+}

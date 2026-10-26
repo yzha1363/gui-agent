@@ -1,0 +1,11 @@
+{
+  "source": "application-state-file",
+  "values": {
+    "window_title": "GUI Agent Friday Demo",
+    "input_focused": true,
+    "entry_text": "",
+    "status": "WAITING",
+    "submitted": "",
+    "submit_enabled": true
+  }
+}

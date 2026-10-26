@@ -1,0 +1,43 @@
+{
+  "root_error": "PermissionError WinError 5 during pending.replace(state_path)",
+  "observed_effect": "Tk export pump stopped; last application state became stale; runner rejected success",
+  "classification": "state_unavailable",
+  "permission_scope": "State export file replacement, not an administrator boundary test",
+  "screenshot_source": {
+    "kind": "screen",
+    "region": {
+      "left": 135,
+      "top": 110,
+      "width": 840,
+      "height": 560
+    },
+    "monitors": [
+      {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080,
+        "is_primary": true
+      }
+    ],
+    "dpi_mode": "per-monitor-v2",
+    "coordinate_space": "physical-desktop-pixels",
+    "capture_ms": 63.8
+  },
+  "fix": "Defer transient publication denials to next 40ms tick without renewing the old state timestamp.",
+  "screenshot_crop": {
+    "box_in_original_pixels": [
+      40,
+      28,
+      840,
+      560
+    ],
+    "purpose": "Remove the strip outside the test window; retained pixels are unchanged. Screenshot remains a partial view of the failure scene."
+  }
+}

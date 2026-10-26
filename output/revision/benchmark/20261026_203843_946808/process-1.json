@@ -1,0 +1,34 @@
+{
+  "import_ms": 7709.048899938352,
+  "image_load_ms": 18.39850004762411,
+  "reader_init_ms": 7322.026400011964,
+  "first_inference_ms": 15461.832,
+  "cold_ready_ms": 30511.31530001294,
+  "warm_inference_ms": [
+    347.153,
+    354.7,
+    256.254,
+    368.974,
+    319.91,
+    319.532,
+    311.864,
+    157.137,
+    316.596,
+    310.383
+  ],
+  "recognized_texts": [
+    "GUI Agent Test",
+    "屏幕截图与文字识别",
+    "搜索文件",
+    "Hello World 12345"
+  ],
+  "device": "cuda",
+  "image_size": [
+    1280,
+    720
+  ],
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5070"
+}

@@ -1,0 +1,91 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-26T10:25:11.749991+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "failed",
+      "action_sent": true,
+      "verified": false,
+      "observations": [
+        "output\\revision\\system\\current\\20261026_212510_368674\\0001_step01_before1",
+        "output\\revision\\system\\current\\20261026_212510_368674\\0002_step01_after1",
+        "output\\revision\\system\\current\\20261026_212510_368674\\0003_step01_after2"
+      ],
+      "target": {
+        "id": 11,
+        "text": "INPUT FIELD",
+        "confidence": 0.8507283967809365,
+        "desktop_center": [
+          322,
+          460
+        ],
+        "desktop_bbox": [
+          230.0,
+          444.0,
+          414.0,
+          477.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.557
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": false,
+        "ocr": {
+          "met": false,
+          "matches": []
+        },
+        "state": {
+          "met": false,
+          "available": true,
+          "source": "application-state-file",
+          "checks": [
+            {
+              "field": "input_focused",
+              "expected": true,
+              "actual": true,
+              "met": true
+            },
+            {
+              "field": "status",
+              "expected": "INPUT READY",
+              "actual": "WAITING",
+              "met": false
+            }
+          ]
+        },
+        "channels_agree": true,
+        "directory": "output\\revision\\system\\current\\20261026_212510_368674\\0003_step01_after2",
+        "transition_required": true
+      },
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      }
+    }
+  ],
+  "error": {
+    "code": "verification_timeout",
+    "category": "verification_failure",
+    "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+  },
+  "finished_at_utc": "2026-10-26T10:25:14.611740+00:00",
+  "scenario": "no_change",
+  "display": {
+    "dpi": 96,
+    "scale_percent": 100,
+    "screen_physical_pixels": [
+      1920,
+      1080
+    ],
+    "window_hwnd": 1117042,
+    "dpi_source": "GetDpiForWindow"
+  }
+}

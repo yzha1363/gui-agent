@@ -21,13 +21,14 @@ def observation(*texts):
               'results': [{'id': i + 1, 'text': text, 'confidence': 0.95,
                            'bbox': [20, 30 + i * 40, 220, 60 + i * 40]}
                           for i, text in enumerate(texts)]}
-    return SimpleNamespace(report=report, directory=Path('fake-observation'))
+    return SimpleNamespace(report=report, directory=Path('fake-observation'),
+                           state={'source': 'mock-widget-adapter', 'values': {'status': 'DONE' if 'DONE' in texts else 'WAITING'}})
 
 
 def click_plan():
     return {'window_title': 'Test window', 'steps': [{
         'action': 'click_text', 'text': 'START', 'timeout': 0.2,
-        'expect': {'text': 'DONE'},
+        'expect': {'text': 'DONE', 'state': {'status': 'DONE'}},
     }]}
 
 
@@ -137,19 +138,19 @@ class WorkflowTests(unittest.TestCase):
 
     def test_typing_is_verified_from_a_new_screenshot(self):
         plan = {'window_title': 'Test window', 'steps': [{'action': 'type_text', 'text': '中文123',
-                                                        'expect': {'text': '中文123'}}]}
+                                                        'expect': {'text': '中文123', 'state': {'status': 'WAITING'}}}]}
         result = self.runner([observation('INPUT READY'), observation('中文123')]).run(plan)
         self.assertTrue(result['success'])
         self.control.type_text.assert_called_once_with('中文123')
 
     def test_text_disappearance_can_be_a_postcondition(self):
         plan = click_plan()
-        plan['steps'][0]['expect'] = {'text': 'START', 'present': False}
+        plan['steps'][0]['expect'] = {'text': 'START', 'present': False, 'state': {'status': 'DONE'}}
         result = self.runner([observation('START'), observation('DONE')]).run(plan)
         self.assertTrue(result['success'])
 
     def test_wait_step_never_sends_input(self):
-        plan = {'window_title': 'Test window', 'steps': [{'action': 'wait_text', 'expect': {'text': 'READY'}}]}
+        plan = {'window_title': 'Test window', 'steps': [{'action': 'wait_text', 'expect': {'text': 'READY', 'state': {'status': 'WAITING'}}}]}
         result = self.runner([observation('READY')]).run(plan)
         self.assertTrue(result['success'])
         self.assertFalse(result['steps'][0]['action_sent'])

@@ -1,0 +1,194 @@
+{
+  "status": "completed",
+  "success": true,
+  "started_at_utc": "2026-10-26T10:31:03.213945+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\revision\\system\\scale-125\\20261026_213059_278656\\0001_step01_before1",
+        "output\\revision\\system\\scale-125\\20261026_213059_278656\\0002_step01_after1"
+      ],
+      "target": {
+        "id": 10,
+        "text": "INPUT FIELD",
+        "confidence": 0.7558622354092424,
+        "desktop_center": [
+          322,
+          467
+        ],
+        "desktop_bbox": [
+          204.0,
+          446.0,
+          439.0,
+          488.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.965
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "ocr": {
+          "met": true,
+          "matches": [
+            {
+              "id": 3,
+              "text": "INPUT READY",
+              "confidence": 0.6292608476910732
+            }
+          ]
+        },
+        "state": {
+          "met": true,
+          "available": true,
+          "source": "application-state-file",
+          "checks": [
+            {
+              "field": "input_focused",
+              "expected": true,
+              "actual": true,
+              "met": true
+            },
+            {
+              "field": "status",
+              "expected": "INPUT READY",
+              "actual": "INPUT READY",
+              "met": true
+            }
+          ]
+        },
+        "channels_agree": true,
+        "directory": "output\\revision\\system\\scale-125\\20261026_213059_278656\\0002_step01_after1",
+        "transition_required": true
+      }
+    },
+    {
+      "name": "enter_text",
+      "action": "type_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\revision\\system\\scale-125\\20261026_213059_278656\\0003_step02_before1",
+        "output\\revision\\system\\scale-125\\20261026_213059_278656\\0005_step02_after2"
+      ],
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "ocr": {
+          "met": true,
+          "matches": [
+            {
+              "id": 12,
+              "text": "Hello GUI 123 中文测试",
+              "confidence": 0.5145120294525811
+            }
+          ]
+        },
+        "state": {
+          "met": true,
+          "available": true,
+          "source": "application-state-file",
+          "checks": [
+            {
+              "field": "entry_text",
+              "expected": "Hello GUI 123 中文测试",
+              "actual": "Hello GUI 123 中文测试",
+              "met": true
+            }
+          ]
+        },
+        "channels_agree": true,
+        "directory": "output\\revision\\system\\scale-125\\20261026_213059_278656\\0005_step02_after2",
+        "transition_required": true
+      }
+    },
+    {
+      "name": "submit_and_confirm",
+      "action": "click_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\revision\\system\\scale-125\\20261026_213059_278656\\0006_step03_before1",
+        "output\\revision\\system\\scale-125\\20261026_213059_278656\\0007_step03_after1"
+      ],
+      "target": {
+        "id": 11,
+        "text": "SUBMIT",
+        "confidence": 0.9983516356379273,
+        "desktop_center": [
+          1029,
+          467
+        ],
+        "desktop_bbox": [
+          954.0,
+          447.0,
+          1104.0,
+          487.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 0.589
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "ocr": {
+          "met": true,
+          "matches": [
+            {
+              "id": 13,
+              "text": "SUBMITTED Hello GUI 123 中文测试",
+              "confidence": 0.7257583916836315
+            }
+          ]
+        },
+        "state": {
+          "met": true,
+          "available": true,
+          "source": "application-state-file",
+          "checks": [
+            {
+              "field": "submitted",
+              "expected": "SUBMITTED Hello GUI 123 中文测试",
+              "actual": "SUBMITTED Hello GUI 123 中文测试",
+              "met": true
+            },
+            {
+              "field": "submit_enabled",
+              "expected": true,
+              "actual": true,
+              "met": true
+            }
+          ]
+        },
+        "channels_agree": true,
+        "directory": "output\\revision\\system\\scale-125\\20261026_213059_278656\\0007_step03_after1",
+        "transition_required": true
+      }
+    }
+  ],
+  "finished_at_utc": "2026-10-26T10:31:10.031621+00:00",
+  "scenario": "normal",
+  "display": {
+    "dpi": 120,
+    "scale_percent": 125,
+    "screen_physical_pixels": [
+      1920,
+      1080
+    ],
+    "window_hwnd": 11734714,
+    "dpi_source": "GetDpiForWindow"
+  },
+  "state_write_denials": 1
+}

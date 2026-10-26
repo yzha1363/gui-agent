@@ -1,0 +1,25 @@
+{
+  "window_hwnd": 526994,
+  "dpi": null,
+  "scale_percent": null,
+  "awareness": null,
+  "monitors": [
+    {
+      "index": 0,
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 1,
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "is_primary": true
+    }
+  ],
+  "status": "unavailable_invalid_window_handle_not_validated",
+  "ui_block": "activation failed twice; waiting for foreground window"
+}

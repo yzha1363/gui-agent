@@ -67,9 +67,16 @@ def validate_plan(plan, allowed_keys=None):
                 if allowed_keys is not None and key not in allowed_keys:
                     raise ValueError(f'Unknown key: {key}')
         condition = step.get('expect')
-        if not isinstance(condition, dict) or set(condition) - {'text', 'present', 'contains', 'min_confidence', 'transition'}:
+        if not isinstance(condition, dict) or set(condition) - {'text', 'present', 'contains', 'min_confidence', 'transition', 'state'}:
             raise ValueError(f'Step {index} needs an explicit expect condition.')
         text(condition.get('text'), 'expected text')
+        state = condition.get('state')
+        if not isinstance(state, dict) or not state:
+            raise ValueError('expect.state needs at least one independent application state check.')
+        for key, value in state.items():
+            text(key, 'state field')
+            if type(value) not in (str, bool, int) or (isinstance(value, str) and not value):
+                raise ValueError('Expected state values must be nonempty strings, booleans or integers.')
         condition.setdefault('present', True)
         condition.setdefault('contains', False)
         condition.setdefault('min_confidence', 0.5)

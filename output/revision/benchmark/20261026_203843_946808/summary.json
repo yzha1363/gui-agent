@@ -1,0 +1,170 @@
+{
+  "timestamp_utc": "2026-10-26T09:40:09.413058+00:00",
+  "definition": "Fresh Python process, cached model files and OS caches; not reboot-cold or download time.",
+  "warm_definition": "Same reader and identical image after its first inference; GPU synchronized after every call.",
+  "input": "D:\\study\\实习\\output\\wednesday-validation\\1280x720\\screenshot.png",
+  "input_sha256": "d697c99fc22f7b68158db5b77e8bd7a31b189010d59e6681c385d422b276a9c4",
+  "parameters": {
+    "canvas_size": 1600,
+    "batch_size": 1,
+    "workers": 0
+  },
+  "samples": [
+    {
+      "import_ms": 7709.048899938352,
+      "image_load_ms": 18.39850004762411,
+      "reader_init_ms": 7322.026400011964,
+      "first_inference_ms": 15461.832,
+      "cold_ready_ms": 30511.31530001294,
+      "warm_inference_ms": [
+        347.153,
+        354.7,
+        256.254,
+        368.974,
+        319.91,
+        319.532,
+        311.864,
+        157.137,
+        316.596,
+        310.383
+      ],
+      "recognized_texts": [
+        "GUI Agent Test",
+        "屏幕截图与文字识别",
+        "搜索文件",
+        "Hello World 12345"
+      ],
+      "device": "cuda",
+      "image_size": [
+        1280,
+        720
+      ],
+      "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070",
+      "process_wall_ms": 34099.68530002516
+    },
+    {
+      "import_ms": 1469.2889000289142,
+      "image_load_ms": 9.43350000306964,
+      "reader_init_ms": 3255.233900039457,
+      "first_inference_ms": 16190.124,
+      "cold_ready_ms": 20924.09610003233,
+      "warm_inference_ms": [
+        333.97,
+        384.524,
+        385.07,
+        371.173,
+        377.149,
+        266.46,
+        369.151,
+        388.684,
+        356.033,
+        365.907
+      ],
+      "recognized_texts": [
+        "GUI Agent Test",
+        "屏幕截图与文字识别",
+        "搜索文件",
+        "Hello World 12345"
+      ],
+      "device": "cuda",
+      "image_size": [
+        1280,
+        720
+      ],
+      "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070",
+      "process_wall_ms": 25658.39140000753
+    },
+    {
+      "import_ms": 1840.9866000292823,
+      "image_load_ms": 13.388399966061115,
+      "reader_init_ms": 4182.7614000067115,
+      "first_inference_ms": 15356.609,
+      "cold_ready_ms": 21393.756800098345,
+      "warm_inference_ms": [
+        361.426,
+        377.316,
+        363.743,
+        361.123,
+        375.452,
+        366.975,
+        368.572,
+        364.526,
+        360.536,
+        354.841
+      ],
+      "recognized_texts": [
+        "GUI Agent Test",
+        "屏幕截图与文字识别",
+        "搜索文件",
+        "Hello World 12345"
+      ],
+      "device": "cuda",
+      "image_size": [
+        1280,
+        720
+      ],
+      "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070",
+      "process_wall_ms": 25707.776799914427
+    }
+  ],
+  "statistics": {
+    "import_ms": {
+      "n": 3,
+      "mean_ms": 3673.11,
+      "median_ms": 1840.99,
+      "p95_ms": 7709.05,
+      "min_ms": 1469.29,
+      "max_ms": 7709.05
+    },
+    "reader_init_ms": {
+      "n": 3,
+      "mean_ms": 4920.01,
+      "median_ms": 4182.76,
+      "p95_ms": 7322.03,
+      "min_ms": 3255.23,
+      "max_ms": 7322.03
+    },
+    "first_inference_ms": {
+      "n": 3,
+      "mean_ms": 15669.52,
+      "median_ms": 15461.83,
+      "p95_ms": 16190.12,
+      "min_ms": 15356.61,
+      "max_ms": 16190.12
+    },
+    "cold_ready_ms": {
+      "n": 3,
+      "mean_ms": 24276.39,
+      "median_ms": 21393.76,
+      "p95_ms": 30511.32,
+      "min_ms": 20924.1,
+      "max_ms": 30511.32
+    },
+    "process_wall_ms": {
+      "n": 3,
+      "mean_ms": 28488.62,
+      "median_ms": 25707.78,
+      "p95_ms": 34099.69,
+      "min_ms": 25658.39,
+      "max_ms": 34099.69
+    },
+    "warm_inference_ms": {
+      "n": 30,
+      "mean_ms": 343.84,
+      "median_ms": 361.27,
+      "p95_ms": 385.07,
+      "min_ms": 157.14,
+      "max_ms": 388.68
+    }
+  },
+  "note": "process_wall_ms includes warm runs and process teardown; use cold_ready_ms for cold OCR readiness."
+}

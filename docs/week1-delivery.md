@@ -9,13 +9,15 @@
 | 中英文 OCR 与边界框标注 | 已实现并验证 | screen_ocr.py、output/wednesday-validation/ |
 | 文字目标筛选与物理坐标 | 已实现并验证 | gui_control/targets.py、周四任务验证记录.md |
 | 鼠标、键盘和 Unicode 输入 | 已实现并验证 | gui_control/controller.py、gui_control/unicode_input.py |
-| 截图到执行再到确认的闭环 | 已实现并验证 | gui_workflow/、plans/friday_demo.json |
+| 截图到执行再到确认的闭环 | 新版双通道在 100% 与 125% 正常流程通过 | gui_workflow/、plans/friday_demo.json |
 | 错误处理及停止行为 | 已验证固定场景 | 周五任务验证记录.md、output/friday-test-summary.json |
-| 单元测试与测试记录 | 30 项测试及 8 个桌面场景已通过 | tests/、周五任务测试清单.md |
+| 单元测试与测试记录 | 60 项离线通过；本次六组系统场景最终符合预期 | tests/、docs/testing.md |
+| OCR 冷热启动 | 3 次新进程冷启动与 30 次热推理已测 | benchmark_ocr.py、output/revision/benchmark/ |
+| 结果双重确认与失败分类 | 离线及受控 GUI 已验证；状态发布故障已修复 | gui_workflow/verification.py、docs/verification-and-target-rules.md |
 | 统一入口与架构说明 | 周六已补充 | README.md、docs/architecture.md |
 | 可复用检查与交付工具 | 周六已补充 | scripts/check_project.py、scripts/package_project.py |
 | GUI Agent 技术调研报告 | 待完成 | 需比较 Ui-TARS、Claude Computer Use 和 ScreenAgent |
-| 真实多屏与系统缩放切换测试 | 尚未进行 | 当前只在主屏实测，其他尺寸使用可控图片验证 |
+| 真实多屏与系统缩放切换测试 | 100% 与 125% 已测；200% 与多屏待测 | output/revision/system-summary.json |
 | Git 仓库与远程备份 | 本地仓库与远程私有仓库已建立 | yzha1363/gui-agent；以远程 main 分支为同步结果 |
 
 ## 交付方式

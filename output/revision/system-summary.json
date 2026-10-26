@@ -1,0 +1,273 @@
+{
+  "timestamp_utc": "2026-10-26T10:36:38.047351+00:00",
+  "cases": [
+    {
+      "scale_percent": 100,
+      "scenario": "duplicate",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "expected_failure": true,
+        "action_count": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "failed",
+      "actions": 0,
+      "error": {
+        "code": "AmbiguousTarget",
+        "category": "localization_failure",
+        "message": "2 targets matched; specify a 1-based occurrence. Candidates: [{'id': 10, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [322, 460], 'desktop_bbox': [230.0, 444.0, 414.0, 477.0]}, {'id': 11, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [648, 460], 'desktop_bbox': [556.0, 444.0, 740.0, 477.0]}]"
+      },
+      "summary": "output/revision/system/current/20261026_212439_237786/summary.json",
+      "last_observation": "output\\revision\\system\\current\\20261026_212439_237786\\0001_step01_before1"
+    },
+    {
+      "scale_percent": 100,
+      "scenario": "false_ocr",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "expected_failure": true,
+        "action_count": true,
+        "false_positive_rejected": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "failed",
+      "actions": 1,
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "summary": "output/revision/system/false-ocr/20261026_212550_931054/summary.json",
+      "last_observation": "output\\revision\\system\\false-ocr\\20261026_212550_931054\\0003_step01_after2"
+    },
+    {
+      "scale_percent": 100,
+      "scenario": "missing",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "expected_failure": true,
+        "action_count": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "failed",
+      "actions": 0,
+      "error": {
+        "code": "target_unavailable",
+        "category": "localization_failure",
+        "message": "No text target matched: inputfield"
+      },
+      "summary": "output/revision/system/current/20261026_212454_007337/summary.json",
+      "last_observation": "output\\revision\\system\\current\\20261026_212454_007337\\0003_step01_before3"
+    },
+    {
+      "scale_percent": 100,
+      "scenario": "no_change",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "expected_failure": true,
+        "action_count": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "failed",
+      "actions": 1,
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "summary": "output/revision/system/current/20261026_212510_368674/summary.json",
+      "last_observation": "output\\revision\\system\\current\\20261026_212510_368674\\0003_step01_after2"
+    },
+    {
+      "scale_percent": 100,
+      "scenario": "normal",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "completed": true,
+        "three_actions": true,
+        "all_three_double_checked": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "completed",
+      "actions": 3,
+      "error": null,
+      "summary": "output/revision/system/restored-100/20261026_213438_605990/summary.json",
+      "last_observation": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0006_step03_after1"
+    },
+    {
+      "scale_percent": 125,
+      "scenario": "normal",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "completed": true,
+        "three_actions": true,
+        "all_three_double_checked": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "completed",
+      "actions": 3,
+      "error": null,
+      "summary": "output/revision/system/scale-125/20261026_213059_278656/summary.json",
+      "last_observation": "output\\revision\\system\\scale-125\\20261026_213059_278656\\0007_step03_after1"
+    }
+  ],
+  "tests": 6,
+  "passed": 6,
+  "all_executed_cases_passed": true,
+  "run_attempts": [
+    {
+      "summary": "output/revision/system/current/20261026_212355_524888/summary.json",
+      "scale_percent": 100,
+      "scenario": "normal",
+      "workflow_status": "completed",
+      "finished_at_utc": "2026-10-26T10:24:08.535305+00:00",
+      "error": null,
+      "state_write_denials": null
+    },
+    {
+      "summary": "output/revision/system/current/20261026_212439_237786/summary.json",
+      "scale_percent": 100,
+      "scenario": "duplicate",
+      "workflow_status": "failed",
+      "finished_at_utc": "2026-10-26T10:24:41.270329+00:00",
+      "error": {
+        "code": "AmbiguousTarget",
+        "category": "localization_failure",
+        "message": "2 targets matched; specify a 1-based occurrence. Candidates: [{'id': 10, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [322, 460], 'desktop_bbox': [230.0, 444.0, 414.0, 477.0]}, {'id': 11, 'text': 'INPUT FIELD', 'confidence': 0.8507283967809365, 'desktop_center': [648, 460], 'desktop_bbox': [556.0, 444.0, 740.0, 477.0]}]"
+      },
+      "state_write_denials": null
+    },
+    {
+      "summary": "output/revision/system/current/20261026_212454_007337/summary.json",
+      "scale_percent": 100,
+      "scenario": "missing",
+      "workflow_status": "failed",
+      "finished_at_utc": "2026-10-26T10:24:57.893289+00:00",
+      "error": {
+        "code": "target_unavailable",
+        "category": "localization_failure",
+        "message": "No text target matched: inputfield"
+      },
+      "state_write_denials": null
+    },
+    {
+      "summary": "output/revision/system/current/20261026_212510_368674/summary.json",
+      "scale_percent": 100,
+      "scenario": "no_change",
+      "workflow_status": "failed",
+      "finished_at_utc": "2026-10-26T10:25:14.611740+00:00",
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "state_write_denials": null
+    },
+    {
+      "summary": "output/revision/system/false-ocr/20261026_212550_931054/summary.json",
+      "scale_percent": 100,
+      "scenario": "false_ocr",
+      "workflow_status": "failed",
+      "finished_at_utc": "2026-10-26T10:25:58.182171+00:00",
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "state_write_denials": null
+    },
+    {
+      "summary": "output/revision/system/restored-100/20261026_213438_605990/summary.json",
+      "scale_percent": 100,
+      "scenario": "normal",
+      "workflow_status": "completed",
+      "finished_at_utc": "2026-10-26T10:34:48.697431+00:00",
+      "error": null,
+      "state_write_denials": 0
+    },
+    {
+      "summary": "output/revision/system/scale-125/20261026_212909_983255/summary.json",
+      "scale_percent": 125,
+      "scenario": "normal",
+      "workflow_status": "failed",
+      "finished_at_utc": "2026-10-26T10:29:19.193846+00:00",
+      "error": {
+        "code": "StateUnavailable",
+        "category": "state_unavailable",
+        "message": "Application state export is stale."
+      },
+      "state_write_denials": null
+    },
+    {
+      "summary": "output/revision/system/scale-125/20261026_213059_278656/summary.json",
+      "scale_percent": 125,
+      "scenario": "normal",
+      "workflow_status": "completed",
+      "finished_at_utc": "2026-10-26T10:31:10.031621+00:00",
+      "error": null,
+      "state_write_denials": 1
+    }
+  ],
+  "normal_scaling": {
+    "100": {
+      "scale_percent": 100,
+      "scenario": "normal",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "completed": true,
+        "three_actions": true,
+        "all_three_double_checked": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "completed",
+      "actions": 3,
+      "error": null,
+      "summary": "output/revision/system/restored-100/20261026_213438_605990/summary.json",
+      "last_observation": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0006_step03_after1"
+    },
+    "125": {
+      "scale_percent": 125,
+      "scenario": "normal",
+      "passed": true,
+      "assertions": {
+        "dpi_matches_scale": true,
+        "same_resolution": true,
+        "completed": true,
+        "three_actions": true,
+        "all_three_double_checked": true,
+        "independent_evidence_exists": true
+      },
+      "workflow_status": "completed",
+      "actions": 3,
+      "error": null,
+      "summary": "output/revision/system/scale-125/20261026_213059_278656/summary.json",
+      "last_observation": "output\\revision\\system\\scale-125\\20261026_213059_278656\\0007_step03_after1"
+    },
+    "200": null
+  },
+  "blocked_initialization_attempts": [
+    {
+      "summary": "output/revision/system/normal-100/20261026_203915_460657/summary.json",
+      "status": "initialization_failed",
+      "error": {
+        "code": "FocusLost",
+        "category": "window_guard_failure",
+        "message": "Foreground window must be 'GUI Agent Friday Demo'; found '三角洲行动  '."
+      }
+    }
+  ]
+}

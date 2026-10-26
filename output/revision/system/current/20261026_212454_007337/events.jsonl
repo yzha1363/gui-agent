@@ -1,0 +1,8 @@
+{"time_utc": "2026-10-26T10:24:55.335332+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:24:55.880034+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\current\\20261026_212454_007337\\0001_step01_before1"}
+{"time_utc": "2026-10-26T10:24:55.880214+00:00", "event": "observation_retry", "step": "focus_input", "attempt": 1, "error": "No text target matched: inputfield"}
+{"time_utc": "2026-10-26T10:24:56.886896+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\current\\20261026_212454_007337\\0002_step01_before2"}
+{"time_utc": "2026-10-26T10:24:56.887347+00:00", "event": "observation_retry", "step": "focus_input", "attempt": 2, "error": "No text target matched: inputfield"}
+{"time_utc": "2026-10-26T10:24:57.892442+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\current\\20261026_212454_007337\\0003_step01_before3"}
+{"time_utc": "2026-10-26T10:24:57.892920+00:00", "event": "observation_retry", "step": "focus_input", "attempt": 3, "error": "No text target matched: inputfield"}
+{"time_utc": "2026-10-26T10:24:57.893036+00:00", "event": "workflow_stopped", "status": "failed", "error": {"code": "target_unavailable", "category": "localization_failure", "message": "No text target matched: inputfield"}}

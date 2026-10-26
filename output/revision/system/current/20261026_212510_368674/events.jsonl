@@ -1,0 +1,7 @@
+{"time_utc": "2026-10-26T10:25:11.751239+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:25:12.293204+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\current\\20261026_212510_368674\\0001_step01_before1"}
+{"time_utc": "2026-10-26T10:25:12.313573+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:25:13.070834+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-26T10:25:13.591707+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\current\\20261026_212510_368674\\0002_step01_after1"}
+{"time_utc": "2026-10-26T10:25:14.610795+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\current\\20261026_212510_368674\\0003_step01_after2"}
+{"time_utc": "2026-10-26T10:25:14.611292+00:00", "event": "workflow_stopped", "status": "failed", "error": {"code": "verification_timeout", "category": "verification_failure", "message": "OCR and independent state did not both meet expectations; input will not be repeated."}}

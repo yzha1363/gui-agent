@@ -1,0 +1,11 @@
+{
+  "source": "application-state-file",
+  "values": {
+    "window_title": "GUI Agent Friday Demo",
+    "input_focused": true,
+    "entry_text": "Hello GUI 123 中文测",
+    "status": "INPUT READY",
+    "submitted": "",
+    "submit_enabled": true
+  }
+}

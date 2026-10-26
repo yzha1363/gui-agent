@@ -9,6 +9,8 @@ from PIL import Image
 
 from gui_control.controller import ControlError
 from gui_perception.pipeline import capture_screen, create_reader, save_run
+from gui_workflow.verification import StateUnavailable
+import json
 
 
 class StaleTarget(ControlError):
@@ -21,31 +23,39 @@ class Observation:
     image: Image.Image
     directory: Path
     captured_at: float
+    state: dict | None = None
 
 
 class ScreenObserver:
-    def __init__(self, control, output, device='auto', canvas_size=1600, drift_threshold=12):
+    def __init__(self, control, output, device='auto', canvas_size=1600, drift_threshold=12, state_provider=None):
         self.control = control
         self.output = Path(output)
         self.canvas_size = canvas_size
         self.drift_threshold = drift_threshold
         self.counter = 0
+        self.state_provider = state_provider
         control.check()
         self.reader, self.device = create_reader(device)
         control.check()
 
     def observe(self, label):
         self.control.check()
+        if self.state_provider is None:
+            raise StateUnavailable('Configure an independent application state adapter before running.')
+        state = self.state_provider()
         region = self.control.window_region()
         captured_at = time.monotonic()
         image, source = capture_screen(region=region)
         self.counter += 1
         directory = self.output / f'{self.counter:04d}_{label}'
         report = save_run(image, source, directory, self.reader, self.device, canvas_size=self.canvas_size)
+        (directory / 'state.json').write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
         self.control.check()
         if region != self.control.window_region():
             raise StaleTarget('Window moved while observing; coordinates are stale.')
-        return Observation(report, image, directory, captured_at)
+        if state != self.state_provider():
+            raise StaleTarget('Application state changed while observing; recapture both channels.')
+        return Observation(report, image, directory, captured_at, state)
 
     def ensure_fresh(self, observation, target):
         """Check the actual text patch again immediately before dispatching a click."""

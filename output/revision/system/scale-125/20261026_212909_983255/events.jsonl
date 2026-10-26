@@ -1,0 +1,12 @@
+{"time_utc": "2026-10-26T10:29:14.054194+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:29:15.087829+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\scale-125\\20261026_212909_983255\\0001_step01_before1"}
+{"time_utc": "2026-10-26T10:29:15.110441+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:29:15.870748+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-26T10:29:16.432842+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\scale-125\\20261026_212909_983255\\0002_step01_after1"}
+{"time_utc": "2026-10-26T10:29:16.434684+00:00", "event": "step_verified", "step": "focus_input"}
+{"time_utc": "2026-10-26T10:29:16.435447+00:00", "event": "step_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-26T10:29:17.048150+00:00", "event": "observation", "step": "enter_text", "directory": "output\\revision\\system\\scale-125\\20261026_212909_983255\\0003_step02_before1"}
+{"time_utc": "2026-10-26T10:29:17.048518+00:00", "event": "dispatch_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-26T10:29:17.441740+00:00", "event": "input_sent", "step": "enter_text"}
+{"time_utc": "2026-10-26T10:29:18.045187+00:00", "event": "observation", "step": "enter_text", "directory": "output\\revision\\system\\scale-125\\20261026_212909_983255\\0004_step02_after1"}
+{"time_utc": "2026-10-26T10:29:19.193162+00:00", "event": "workflow_stopped", "status": "failed", "error": {"code": "StateUnavailable", "category": "state_unavailable", "message": "Application state export is stale."}}

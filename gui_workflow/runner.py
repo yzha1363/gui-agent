@@ -10,6 +10,7 @@ from gui_control.controller import StopRequested
 from gui_control.targets import normalized_text, select_text, TargetNotFound
 from gui_workflow.observer import StaleTarget
 from gui_workflow.plan import validate_plan
+from gui_workflow.verification import evaluate_state, failure_category
 
 
 class WorkflowError(RuntimeError):
@@ -31,6 +32,13 @@ def evaluate_condition(report, condition):
             matches.append({'id': item['id'], 'text': item['text'], 'confidence': confidence})
     met = bool(matches) if condition['present'] else not matches
     return {'met': met, 'matches': matches}
+
+
+def evaluate_observation(observation, condition):
+    ocr = evaluate_condition(observation.report, condition)
+    state = evaluate_state(getattr(observation, 'state', None), condition['state'])
+    return {'met': ocr['met'] and state['met'], 'ocr': ocr, 'state': state,
+            'channels_agree': ocr['met'] == state['met']}
 
 
 class WorkflowRunner:
@@ -95,7 +103,8 @@ class WorkflowRunner:
         except (Exception, KeyboardInterrupt) as exc:
             interrupted = isinstance(exc, (StopRequested, KeyboardInterrupt)) or type(exc).__name__ == 'FailSafeException'
             summary['status'] = 'aborted' if interrupted else 'failed'
-            summary['error'] = {'code': getattr(exc, 'code', type(exc).__name__), 'message': str(exc)}
+            summary['error'] = {'code': getattr(exc, 'code', type(exc).__name__),
+                                'category': failure_category(exc), 'message': str(exc)}
             if summary['steps']:
                 summary['steps'][-1]['status'] = summary['status']
                 summary['steps'][-1]['error'] = summary['error']
@@ -115,7 +124,7 @@ class WorkflowRunner:
                 self.control.check()
                 try:
                     baseline = self.observe(f'{prefix}_before{attempt}', row)
-                    initial = evaluate_condition(baseline.report, step['expect'])
+                    initial = evaluate_observation(baseline, step['expect'])
                     if step['expect']['transition'] and initial['met']:
                         raise WorkflowError('condition_already_satisfied', 'Expected condition already holds before the action; no input was sent.')
                     if action == 'click_text':
@@ -150,13 +159,19 @@ class WorkflowRunner:
         while True:
             self.control.check()
             poll += 1
-            observation = self.observe(f'{prefix}_after{poll}', row)
-            evidence = evaluate_condition(observation.report, step['expect'])
+            try:
+                observation = self.observe(f'{prefix}_after{poll}', row)
+            except StaleTarget:
+                if self.clock() >= deadline:
+                    raise WorkflowError('verification_timeout', 'Both channels could not obtain a stable observation.')
+                self.pause(self.poll_interval)
+                continue
+            evidence = evaluate_observation(observation, step['expect'])
             row['verification'] = {**evidence, 'directory': str(observation.directory),
                                    'transition_required': step['expect']['transition'] if action != 'wait_text' else False}
             if evidence['met']:
                 return
             remaining = deadline - self.clock()
             if remaining <= 0:
-                raise WorkflowError('verification_timeout', 'Fresh screenshots did not meet the expected condition; input will not be repeated.')
+                raise WorkflowError('verification_timeout', 'OCR and independent state did not both meet expectations; input will not be repeated.')
             self.pause(min(remaining, self.poll_interval))

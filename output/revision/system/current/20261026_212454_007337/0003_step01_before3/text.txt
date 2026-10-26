@@ -1,0 +1,12 @@
+GUI Agent Friday Workflow
+Scenario: missing
+WAITING
+BEGIRUN
+STOP
+NORMAL
+DUPLICATE
+MISSING
+NO CHANGE
+SUBMIT
+Running. Waiting for obsered results after each action .
+Escape stops the WNOTKfIOWKeep this test window in the foreground。

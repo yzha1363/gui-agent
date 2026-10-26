@@ -5,19 +5,19 @@
       "name": "focus_input",
       "action": "click_text",
       "text": "INPUT FIELD",
-      "expect": {"text": "INPUT READY", "transition": true}
+      "expect": {"text": "INPUT READY", "transition": true, "state": {"input_focused": true, "status": "INPUT READY"}}
     },
     {
       "name": "enter_text",
       "action": "type_text",
       "text": "Hello GUI 123 中文测试",
-      "expect": {"text": "Hello GUI 123 中文测试", "min_confidence": 0.3, "transition": true}
+      "expect": {"text": "Hello GUI 123 中文测试", "min_confidence": 0.3, "transition": true, "state": {"entry_text": "Hello GUI 123 中文测试"}}
     },
     {
       "name": "submit_and_confirm",
       "action": "click_text",
       "text": "SUBMIT",
-      "expect": {"text": "SUBMITTED Hello GUI 123 中文测试", "min_confidence": 0.3, "transition": true}
+      "expect": {"text": "SUBMITTED Hello GUI 123 中文测试", "min_confidence": 0.3, "transition": true, "state": {"submitted": "SUBMITTED Hello GUI 123 中文测试", "submit_enabled": true}}
     }
   ]
 }

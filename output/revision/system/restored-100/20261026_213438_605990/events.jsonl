@@ -1,0 +1,18 @@
+{"time_utc": "2026-10-26T10:34:42.895993+00:00", "event": "step_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:34:43.910558+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0001_step01_before1"}
+{"time_utc": "2026-10-26T10:34:43.933088+00:00", "event": "dispatch_started", "step": "focus_input", "action": "click_text"}
+{"time_utc": "2026-10-26T10:34:44.691283+00:00", "event": "input_sent", "step": "focus_input"}
+{"time_utc": "2026-10-26T10:34:45.221517+00:00", "event": "observation", "step": "focus_input", "directory": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0002_step01_after1"}
+{"time_utc": "2026-10-26T10:34:45.222569+00:00", "event": "step_verified", "step": "focus_input"}
+{"time_utc": "2026-10-26T10:34:45.222964+00:00", "event": "step_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-26T10:34:45.792151+00:00", "event": "observation", "step": "enter_text", "directory": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0003_step02_before1"}
+{"time_utc": "2026-10-26T10:34:45.792582+00:00", "event": "dispatch_started", "step": "enter_text", "action": "type_text"}
+{"time_utc": "2026-10-26T10:34:46.187886+00:00", "event": "input_sent", "step": "enter_text"}
+{"time_utc": "2026-10-26T10:34:46.758772+00:00", "event": "observation", "step": "enter_text", "directory": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0004_step02_after1"}
+{"time_utc": "2026-10-26T10:34:46.759885+00:00", "event": "step_verified", "step": "enter_text"}
+{"time_utc": "2026-10-26T10:34:46.760343+00:00", "event": "step_started", "step": "submit_and_confirm", "action": "click_text"}
+{"time_utc": "2026-10-26T10:34:47.319510+00:00", "event": "observation", "step": "submit_and_confirm", "directory": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0005_step03_before1"}
+{"time_utc": "2026-10-26T10:34:47.343373+00:00", "event": "dispatch_started", "step": "submit_and_confirm", "action": "click_text"}
+{"time_utc": "2026-10-26T10:34:48.102378+00:00", "event": "input_sent", "step": "submit_and_confirm"}
+{"time_utc": "2026-10-26T10:34:48.696233+00:00", "event": "observation", "step": "submit_and_confirm", "directory": "output\\revision\\system\\restored-100\\20261026_213438_605990\\0006_step03_after1"}
+{"time_utc": "2026-10-26T10:34:48.697371+00:00", "event": "step_verified", "step": "submit_and_confirm"}

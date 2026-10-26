@@ -21,6 +21,10 @@ class StopRequested(ControlError):
     pass
 
 
+class FocusLost(ControlError):
+    pass
+
+
 class WindowGuard:
     def __init__(self, title):
         if sys.platform != 'win32':
@@ -41,9 +45,9 @@ class WindowGuard:
         title = ctypes.create_unicode_buffer(1024)
         self.user32.GetWindowTextW(handle, title, len(title))
         if title.value != self.title:
-            raise ControlError(f'Foreground window must be {self.title!r}; found {title.value!r}.')
+            raise FocusLost(f'Foreground window must be {self.title!r}; found {title.value!r}.')
         if self.window_handle is not None and handle != self.window_handle:
-            raise ControlError('Foreground window identity changed despite matching title.')
+            raise FocusLost('Foreground window identity changed despite matching title.')
         self.window_handle = handle
         return handle
 

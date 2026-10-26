@@ -1,0 +1,137 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-26T10:29:14.053294+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "verified",
+      "action_sent": true,
+      "verified": true,
+      "observations": [
+        "output\\revision\\system\\scale-125\\20261026_212909_983255\\0001_step01_before1",
+        "output\\revision\\system\\scale-125\\20261026_212909_983255\\0002_step01_after1"
+      ],
+      "target": {
+        "id": 10,
+        "text": "INPUT FIELD",
+        "confidence": 0.7558622354092424,
+        "desktop_center": [
+          322,
+          467
+        ],
+        "desktop_bbox": [
+          204.0,
+          446.0,
+          439.0,
+          488.0
+        ]
+      },
+      "freshness": {
+        "patch_mean_difference": 0.0,
+        "age_seconds": 1.049
+      },
+      "dispatch_started": true,
+      "verification": {
+        "met": true,
+        "ocr": {
+          "met": true,
+          "matches": [
+            {
+              "id": 3,
+              "text": "INPUT READY",
+              "confidence": 0.6276999749795039
+            }
+          ]
+        },
+        "state": {
+          "met": true,
+          "available": true,
+          "source": "application-state-file",
+          "checks": [
+            {
+              "field": "input_focused",
+              "expected": true,
+              "actual": true,
+              "met": true
+            },
+            {
+              "field": "status",
+              "expected": "INPUT READY",
+              "actual": "INPUT READY",
+              "met": true
+            }
+          ]
+        },
+        "channels_agree": true,
+        "directory": "output\\revision\\system\\scale-125\\20261026_212909_983255\\0002_step01_after1",
+        "transition_required": true
+      }
+    },
+    {
+      "name": "enter_text",
+      "action": "type_text",
+      "status": "failed",
+      "action_sent": true,
+      "verified": false,
+      "observations": [
+        "output\\revision\\system\\scale-125\\20261026_212909_983255\\0003_step02_before1",
+        "output\\revision\\system\\scale-125\\20261026_212909_983255\\0004_step02_after1"
+      ],
+      "dispatch_started": true,
+      "verification": {
+        "met": false,
+        "ocr": {
+          "met": true,
+          "matches": [
+            {
+              "id": 12,
+              "text": "Hello GUI 123 中文测试",
+              "confidence": 0.5145120294525811
+            }
+          ]
+        },
+        "state": {
+          "met": false,
+          "available": true,
+          "source": "application-state-file",
+          "checks": [
+            {
+              "field": "entry_text",
+              "expected": "Hello GUI 123 中文测试",
+              "actual": "",
+              "met": false
+            }
+          ]
+        },
+        "channels_agree": false,
+        "directory": "output\\revision\\system\\scale-125\\20261026_212909_983255\\0004_step02_after1",
+        "transition_required": true
+      },
+      "error": {
+        "code": "StateUnavailable",
+        "category": "state_unavailable",
+        "message": "Application state export is stale."
+      }
+    }
+  ],
+  "error": {
+    "code": "StateUnavailable",
+    "category": "state_unavailable",
+    "message": "Application state export is stale."
+  },
+  "finished_at_utc": "2026-10-26T10:29:19.193846+00:00",
+  "scenario": "normal",
+  "display": {
+    "dpi": 120,
+    "scale_percent": 125,
+    "screen_physical_pixels": [
+      1920,
+      1080
+    ],
+    "window_hwnd": 3672690,
+    "dpi_source": "GetDpiForWindow"
+  }
+}

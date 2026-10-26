@@ -1,0 +1,9 @@
+{
+  "status": "initialization_failed",
+  "success": false,
+  "error": {
+    "code": "FocusLost",
+    "category": "window_guard_failure",
+    "message": "Foreground window must be 'GUI Agent Friday Demo'; found '三角洲行动  '."
+  }
+}

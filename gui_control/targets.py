@@ -29,6 +29,8 @@ def select_text(report, query, min_confidence=0.5, contains=False, occurrence=No
     to right. Missing and ambiguous targets use separate TargetError subclasses.
     """
     query = normalized_text(query)
+    if occurrence is not None and (type(occurrence) is not int or occurrence < 1):
+        raise TargetError('Occurrence must be a positive integer, not a boolean.')
     if not query:
         raise TargetError('Target text cannot be empty.')
     if not 0 <= min_confidence <= 1:
@@ -55,9 +57,12 @@ def select_text(report, query, min_confidence=0.5, contains=False, occurrence=No
                         'desktop_center': [round(x), round(y)],
                         'desktop_bbox': [left + region['left'], top + region['top'],
                                          right + region['left'], bottom + region['top']]})
-    matches.sort(key=lambda item: (item['desktop_bbox'][1], item['desktop_bbox'][0]))
+    matches.sort(key=lambda item: (item['desktop_bbox'][1], item['desktop_bbox'][0],
+                                   item['desktop_bbox'][3], item['desktop_bbox'][2], str(item['id'])))
     if not matches:
         raise TargetNotFound(f'No text target matched: {query}')
+    if len({tuple(item['desktop_bbox']) for item in matches}) != len(matches):
+        raise AmbiguousTarget('OCR returned duplicate geometry; occurrence cannot distinguish overlapping candidates.')
     if occurrence is None and len(matches) != 1:
         raise AmbiguousTarget(f'{len(matches)} targets matched; specify a 1-based occurrence. Candidates: {matches}')
     index = 0 if occurrence is None else occurrence - 1

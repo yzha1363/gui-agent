@@ -17,6 +17,7 @@ output/*
 !output/friday-test-summary.json
 !output/saturday-summary.json
 !output/个人计划.docx
+!output/revision/
 
 # Editor/Office transient files and local credentials.
 ~$*

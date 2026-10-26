@@ -1,0 +1,42 @@
+{
+  "status": "failed",
+  "success": false,
+  "started_at_utc": "2026-10-26T10:24:55.334234+00:00",
+  "window_title": "GUI Agent Friday Demo",
+  "steps": [
+    {
+      "name": "focus_input",
+      "action": "click_text",
+      "status": "failed",
+      "action_sent": false,
+      "verified": false,
+      "observations": [
+        "output\\revision\\system\\current\\20261026_212454_007337\\0001_step01_before1",
+        "output\\revision\\system\\current\\20261026_212454_007337\\0002_step01_before2",
+        "output\\revision\\system\\current\\20261026_212454_007337\\0003_step01_before3"
+      ],
+      "error": {
+        "code": "target_unavailable",
+        "category": "localization_failure",
+        "message": "No text target matched: inputfield"
+      }
+    }
+  ],
+  "error": {
+    "code": "target_unavailable",
+    "category": "localization_failure",
+    "message": "No text target matched: inputfield"
+  },
+  "finished_at_utc": "2026-10-26T10:24:57.893289+00:00",
+  "scenario": "missing",
+  "display": {
+    "dpi": 96,
+    "scale_percent": 100,
+    "screen_physical_pixels": [
+      1920,
+      1080
+    ],
+    "window_hwnd": 1117042,
+    "dpi_source": "GetDpiForWindow"
+  }
+}
