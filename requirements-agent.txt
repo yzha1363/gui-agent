@@ -1,0 +1,2 @@
+# Week 2 Tuesday: LangChain runnable framework; HTTP transport uses stdlib.
+langchain-core==1.7.0

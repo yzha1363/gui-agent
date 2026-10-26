@@ -1,0 +1,36 @@
+{
+  "created_at_utc": "2026-10-26T15:36:29.579029+00:00",
+  "python_executable": "D:\\study\\实习\\.venv\\Scripts\\python.exe",
+  "desktop_input_sent": false,
+  "checks": [
+    {
+      "name": "unit_tests",
+      "passed": true,
+      "return_code": 0,
+      "test_count": 116,
+      "seconds": 1.357,
+      "log": "output/project-checks/20261027_023629_578863/unit_tests.log"
+    },
+    {
+      "name": "plan_validation",
+      "passed": true,
+      "return_code": 0,
+      "seconds": 0.205,
+      "log": "output/project-checks/20261027_023629_578863/plan_validation.log"
+    },
+    {
+      "name": "dependency_check",
+      "passed": true,
+      "return_code": 0,
+      "seconds": 0.482,
+      "log": "output/project-checks/20261027_023629_578863/dependency_check.log"
+    },
+    {
+      "name": "historical_desktop_evidence",
+      "passed": true,
+      "verified_case_count": 8,
+      "rerun": false
+    }
+  ],
+  "all_passed": true
+}

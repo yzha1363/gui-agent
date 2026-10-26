@@ -1,0 +1,5 @@
+{
+  "status": "clarify",
+  "reason": "This offline screenshot has no live application state adapter; provide the target window and available state fields before planning an executable task.",
+  "step": null
+}

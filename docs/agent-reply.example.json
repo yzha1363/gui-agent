@@ -1,0 +1,13 @@
+{
+  "status": "propose",
+  "reason": "Focus the input entry before typing.",
+  "step": {
+    "name": "focus_input",
+    "action": "click_text",
+    "text": "INPUT FIELD",
+    "expect": {
+      "text": "INPUT READY",
+      "state": {"input_focused": true, "status": "INPUT READY"}
+    }
+  }
+}

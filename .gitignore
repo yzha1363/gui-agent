@@ -19,6 +19,10 @@ output/*
 !output/个人计划.docx
 !output/revision/
 !output/week2-monday/
+!output/week2-tuesday/
+# Only non-sensitive verification summaries are versionable; requests/images stay local.
+output/week2-tuesday/*
+!output/week2-tuesday/verification.json
 
 # Downloaded public data and derivatives stay local with their source licenses.
 data/week2/raw/

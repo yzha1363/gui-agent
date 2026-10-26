@@ -1,0 +1,235 @@
+{
+  "created_at_utc": "2026-10-26T16:54:41.979393+00:00",
+  "langchain_core": "1.7.0",
+  "unit_test_count": 35,
+  "unit_tests_passed": true,
+  "unit_cases": [
+    {
+      "case": "tests.test_agent.AgentTests.test_api_key_is_redacted_from_all_json_artifacts",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_cli_interruption_returns_130",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_existing_output_is_not_overwritten",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_interrupted_request_is_saved_as_aborted_not_running",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_invalid_input_calls_no_model",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_invalid_reply_saves_failure_and_never_retries",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_langchain_replay_writes_all_artifacts_without_input",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.AgentTests.test_tracing_is_disabled_during_model_call",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_auth_rate_limit_and_server_errors_are_not_retried",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_config_rejects_nonfinite_timeout_and_invalid_tokens",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_invalid_envelope_and_oversized_response_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_key_is_hidden_from_config_repr",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_redirects_cannot_forward_authorization",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_remote_plain_http_and_url_secrets_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_request_is_multimodal_post_and_usage_is_filtered",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_timeout_and_connection_failure_are_classified",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ClientTests.test_truncated_or_refusal_response_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_clarification_has_no_action",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_done_does_not_mean_verified",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_done_with_hidden_action_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_markdown_duplicate_keys_and_nan_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_model_cannot_disable_transition",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_model_cannot_invent_state_adapter_fields",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_model_cannot_override_window",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_no_state_adapter_requires_clarify_or_done",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_ocr_only_postcondition_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_shell_or_coordinate_action_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.ContractTests.test_valid_proposal_pins_window_and_is_never_executable",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_dataset_reads_past_only_never_labels_or_source_prompt",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_empty_instruction_rejected_before_network",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_image_is_png_data_url_with_no_desktop_origin",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_messages_keep_task_and_history_as_user_data",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_missing_image_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_oversized_history_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_agent.InputTests.test_task_only_dataset_cannot_fabricate_image",
+      "passed": true
+    }
+  ],
+  "integration_cases": [
+    {
+      "case": "replay_chain",
+      "kind": "replay",
+      "passed": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\replay\\summary.json"
+    },
+    {
+      "case": "http_ok",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_error": null,
+      "actual_error": null,
+      "requests": 1,
+      "route": "ok",
+      "image_bytes_match": true,
+      "instruction_present": true,
+      "authorization_matches": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\ok\\summary.json"
+    },
+    {
+      "case": "http_auth",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_error": "authentication_failed",
+      "actual_error": "authentication_failed",
+      "requests": 1,
+      "route": "auth",
+      "image_bytes_match": true,
+      "instruction_present": true,
+      "authorization_matches": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\auth\\summary.json"
+    },
+    {
+      "case": "http_rate",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_error": "rate_limited",
+      "actual_error": "rate_limited",
+      "requests": 1,
+      "route": "rate",
+      "image_bytes_match": true,
+      "instruction_present": true,
+      "authorization_matches": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\rate\\summary.json"
+    },
+    {
+      "case": "http_badjson",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_error": "invalid_json",
+      "actual_error": "invalid_json",
+      "requests": 1,
+      "route": "badjson",
+      "image_bytes_match": true,
+      "instruction_present": true,
+      "authorization_matches": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\badjson\\summary.json"
+    },
+    {
+      "case": "http_truncated",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_error": "incomplete_response",
+      "actual_error": "incomplete_response",
+      "requests": 1,
+      "route": "truncated",
+      "image_bytes_match": true,
+      "instruction_present": true,
+      "authorization_matches": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\truncated\\summary.json"
+    },
+    {
+      "case": "monday_sample_input",
+      "kind": "real_public_image_with_replay_reply",
+      "passed": true,
+      "summary": "output\\week2-tuesday\\20261026T165441_668296Z\\monday-sample\\summary.json"
+    }
+  ],
+  "desktop_input_sent": false,
+  "real_model_validation": "pending",
+  "integration_backend": "synthetic loopback HTTP fixture, not a model",
+  "directory": "output/week2-tuesday/20261026T165441_668296Z",
+  "project_check": "output/project-checks/20261027_035422_332316/summary.json",
+  "full_project_tests": 118,
+  "full_project_passed": true,
+  "all_passed": true
+}

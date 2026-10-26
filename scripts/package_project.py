@@ -8,7 +8,8 @@ from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_DIRECTORIES = ['gui_perception', 'gui_control', 'gui_workflow', 'gui_data', 'plans', 'tests', 'scripts', 'docs']
+SOURCE_DIRECTORIES = ['gui_perception', 'gui_control', 'gui_workflow', 'gui_data', 'gui_agent', 'plans', 'tests', 'scripts', 'docs']
+
 
 def source_files():
     files = {path for pattern in ['*.py', '*.md', 'requirements*.txt', '.gitignore'] for path in ROOT.glob(pattern)}
@@ -16,6 +17,7 @@ def source_files():
         files.update(path for path in (ROOT / name).rglob('*')
                      if path.suffix in {'.py', '.cjs', '.json', '.md', '.txt'} and '__pycache__' not in path.parts)
     return sorted(path for path in files if path.is_file() and path.resolve().is_relative_to(ROOT))
+
 
 def portable(value):
     """Replace workspace absolute paths with archive-relative paths in JSON evidence."""
@@ -30,6 +32,7 @@ def portable(value):
         if value.startswith(str(ROOT) + '/'):
             return value[len(str(ROOT)) + 1:]
     return value
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -79,6 +82,7 @@ def main():
     print(f'Archive: {archive}')
     print(f'Files: {manifest["file_count"]} + manifest.json; verified SHA-256 hashes')
     return 0
+
 
 if __name__ == '__main__':
     raise SystemExit(main())

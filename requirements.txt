@@ -1,2 +1,3 @@
 # Runtime dependencies. Install the CUDA torch build first; see README.md.
 -r requirements-thursday.txt
+-r requirements-agent.txt
