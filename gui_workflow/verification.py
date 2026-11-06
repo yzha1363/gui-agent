@@ -6,7 +6,9 @@ import time
 
 
 class StateUnavailable(RuntimeError):
-    pass
+    def __init__(self, message, retryable=True):
+        super().__init__(message)
+        self.retryable = retryable
 
 
 def publish_state(path, data):
@@ -42,12 +44,13 @@ class StateFile:
             if not 0 <= age <= self.max_age:
                 raise StateUnavailable('Application state export is stale.')
             if data['hwnd'] != self.control.guard.active():
-                raise StateUnavailable('Application state export belongs to another HWND.')
+                raise StateUnavailable('Application state export belongs to another HWND.', retryable=False)
             if not isinstance(data['values'], dict):
-                raise StateUnavailable('Invalid application state values.')
+                raise StateUnavailable('Invalid application state values.', retryable=False)
             return {'source': 'application-state-file', 'values': data['values']}
         except (OSError, ValueError, KeyError, TypeError) as exc:
-            raise StateUnavailable(f'Cannot read independent application state: {exc}') from exc
+            raise StateUnavailable(f'Cannot read independent application state: {exc}',
+                                   retryable=isinstance(exc, OSError) and not isinstance(exc, PermissionError)) from exc
 
 
 def evaluate_state(snapshot, expected):
@@ -66,8 +69,12 @@ def failure_category(exc):
     code = getattr(exc, 'code', type(exc).__name__)
     if code in {'StopRequested', 'KeyboardInterrupt', 'FailSafeException'}:
         return 'user_aborted'
-    if isinstance(exc, PermissionError) or getattr(exc, 'winerror', None) == 5:
-        return 'permission_denied'
+    current, seen = exc, set()
+    while current is not None and id(current) not in seen:
+        seen.add(id(current))
+        if isinstance(current, PermissionError) or getattr(current, 'winerror', None) == 5:
+            return 'permission_denied'
+        current = current.__cause__
     if code in {'TargetNotFound', 'AmbiguousTarget', 'TargetError', 'target_unavailable', 'StaleTarget'}:
         return 'localization_failure'
     if code in {'verification_timeout', 'condition_already_satisfied'}:

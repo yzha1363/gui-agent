@@ -44,6 +44,24 @@ output/week3-monday/*
 !output/week3-tuesday/
 output/week3-tuesday/*
 !output/week3-tuesday/verification.json
+!output/week3-wednesday/
+output/week3-wednesday/*
+!output/week3-wednesday/verification.json
+!output/week3-thursday/
+output/week3-thursday/*
+!output/week3-thursday/verification.json
+!output/week3-friday/
+output/week3-friday/*
+!output/week3-friday/verification.json
+
+# Curated release manifests; other release workspace files remain local.
+!output/releases/
+output/releases/*
+!output/releases/gui-agent-v2.0.0/
+output/releases/gui-agent-v2.0.0/*
+!output/releases/gui-agent-v2.0.0/*/
+output/releases/gui-agent-v2.0.0/*/*
+!output/releases/gui-agent-v2.0.0/*/release.json
 
 # Editor/Office transient files and local credentials.
 ~$*

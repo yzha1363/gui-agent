@@ -1,0 +1,13 @@
+{
+  "observation_attempts": 3,
+  "lookup_attempts": 3,
+  "max_replans": 1,
+  "max_observations": 80,
+  "max_dispatches": 12,
+  "session_timeout": 60,
+  "observation_timeout": 5,
+  "lookup_timeout": 8,
+  "verification_timeout": 10,
+  "retry_delay": 0.2,
+  "max_snapshot_age": 2
+}

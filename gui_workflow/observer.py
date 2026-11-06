@@ -41,7 +41,7 @@ class ScreenObserver:
     def observe(self, label):
         self.control.check()
         if self.state_provider is None:
-            raise StateUnavailable('Configure an independent application state adapter before running.')
+            raise StateUnavailable('Configure an independent application state adapter before running.', retryable=False)
         state = self.state_provider()
         region = self.control.window_region()
         captured_at = time.monotonic()

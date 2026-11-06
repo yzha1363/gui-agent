@@ -37,10 +37,11 @@ def main():
     parser.add_argument('--device', choices=['auto', 'cuda', 'cpu'], default='auto')
     parser.add_argument('--countdown', type=float, default=5)
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--recovery-policy', type=Path, help='Opt in to bounded observation/lookup recovery with a caller policy')
     args = parser.parse_args()
-    output = args.output or ROOT / 'output/week2-thursday' / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S_%fZ')
+    output = args.output or ROOT / ('output/week3-thursday' if args.recovery_policy else 'output/week2-thursday') / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S_%fZ')
     if args.demo:
-        if args.execute or args.instruction or args.window_title or args.state_file or args.goal_file or args.replay or args.state_fields:
+        if args.execute or args.instruction or args.window_title or args.state_file or args.goal_file or args.replay or args.state_fields or args.recovery_policy:
             parser.error('--demo is a fully simulated fixture; do not combine it with desktop options')
         try:
             result, _ = run_simulation(output, args.scenario)
@@ -57,6 +58,10 @@ def main():
         created = False
         session_started = False
         try:
+            recovery_policy = None
+            if args.recovery_policy:
+                from gui_workflow.recovery import RecoveryPolicy
+                recovery_policy = RecoveryPolicy.from_dict(json.loads(args.recovery_policy.read_text(encoding='utf-8')))
             client = ReplayClient(args.replay.read_text(encoding='utf-8')) if args.replay else ChatClient(
                 ModelConfig(args.base_url, args.model, os.environ.get('GUI_AGENT_API_KEY', ''), args.timeout, args.max_tokens))
             planner = GuiPlanner(client, args.max_steps)
@@ -70,7 +75,13 @@ def main():
                 observer = ScreenObserver(control, output / 'observations', args.device,
                                           state_provider=StateFile(args.state_file, control))
                 session_started = True
-                result = AgentSession(control, observer, planner, output / 'session',
+                session_type = AgentSession
+                session_options = {}
+                if recovery_policy is not None:
+                    from gui_agent.recovery import RecoverySession
+                    session_type = RecoverySession
+                    session_options['policy'] = recovery_policy
+                result = session_type(control, observer, planner, output / 'session', **session_options,
                                       progress=lambda stage: print(f'Agent stage: {stage}', flush=True)).run(
                     args.instruction, args.window_title, args.state_fields, goal, args.execute)
         except (Exception, KeyboardInterrupt) as exc:

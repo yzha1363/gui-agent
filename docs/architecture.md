@@ -107,3 +107,29 @@ flowchart LR
 损失仅覆盖 assistant 目标 token。每个累积窗口按各样本有效目标 token 数加权反向传播，短尾窗口按实际 token 数归一化。Accelerator 使用 bf16、单进程和 accumulation_steps=1；显式累积避免再次缩放。验证关闭梯度并恢复先前训练模式，仅以验证损失选择最佳 adapter。
 
 checkpoint 在完整优化器更新后保存 adapter、优化器、调度器、全部随机状态、数据游标、历史日志与最佳 adapter。文件清单、SHA-256、配置与数据指纹在加载前检查；临时目录写完后改名，已有 checkpoint 不覆盖。最终权重和最佳权重分开保留，重新加载后比较权重和同精度 logits，再实际生成。跨进程恢复与连续训练的实测对照见 [第三周周二记录](week3-tuesday.md)。
+
+## 第三周离线模型效果比较
+
+`evaluate_lora.py` 调用 `gui_training/evaluate_run.py`，先验证训练来源并冻结协议，再在 validation 上固定最佳 adapter 比较两种提示词，写出选择文件后才运行 test。主对照固定 original 提示词，分别加载基础模型、最佳 adapter 和最终 adapter；推理全程无梯度，不创建桌面控制器。
+
+`gui_training/evaluation.py` 拒绝修补或截取模型 JSON，分别计算结构合法性、动作类型顺序、非坐标参数和原图坐标距离，并要求联合通过才匹配参考标注。旧截图坐标、标注匹配及模型表达均不等于实际执行后的状态确认；真实 GUI 成功率保持未测。
+
+每例保存实际输入图、提示、处理器张量指纹、输出 token 与原文。证据审计在 CPU 上重新构造输入并评分，核对参考标签、图片像素、冻结协议和训练来源，不重新生成答案。实测结果与失败见 [第三周周三记录](week3-wednesday.md)。
+
+## 第三周有界恢复与状态监控
+
+`RecoverySession` 是显式可选入口，复用原 AgentSession 的规划契约与调用方目标，通过 RecoveringObserver、RecoveringWorkflowRunner 和 GuardedControl 共享一份单调时钟预算、观察计数、派发计数及锁定窗口身份。观察可恢复临时状态或截图问题；定位可重新获取目标；每个动作前额外复核状态与窗口区域，点击仍复核图块。
+
+重规划仅限全会话零可能输入时的规划上下文/定位失败。每一轮重新捕获截图和独立状态并保留新的规划目录，不复用旧请求。前序步骤已验证也不会放宽“派发后不自动重规划”的约束。复杂计划按已有依赖记录 verified、failed、blocked 和 pending，原有全计划校验及最终 OCR＋state 目标不变。
+
+可能输入标记先于控制调用和持久化设置，异常时从运行器内存台账保守恢复计数；不能用缺少返回日志推断输入未发生。失败后条件允许时只读观察，诊断满足目标也不能消除部分输入/提交不确定性。停止、权限、窗口变化及预算耗尽不触发进一步诊断或重新聚焦。预算不能强制中断阻塞调用，返回后必须再次检查。结果见 [第三周周四记录](week3-thursday.md)。
+
+## 系统 v2.0 的点击目标复核与鲁棒性
+
+RecoveringWorkflowRunner 在输入前的第二次观察中重新运行 select_text，保持相同文本、置信度与 occurrence 契约。目标位置变化会触发有限重新获取，消失会有限重试，新出现的重名歧义立即停止；新鲜图块检查以本次新观察及新目标为依据，不沿用第一次的坐标和唯一性假设。
+
+`gui_tasks/robustness.py` 使用独立的矩形几何命中和控件事件状态检验结果，明确记录合成 OCR 与故障注入；固定预设布局不会被写成真实桌面测试。`robustness_demo.py` 是单独的真实窗口入口，具备独立 state-file、停止请求、原始 OCR 留存和时序记录，已用于受控桌面补测。
+
+后续真实补测已完成：当前阶段 deadline 的错误码传入观察层，避免结果确认超时被归为单次观察超时。提交后故障注入通过 `gui_tasks/desktop_faults.py` 只读等待实际回调确认，不重复点击；未确认或多次确认时明确判 fixture 失败。11 种专用窗口场景最新结果符合预期，全部历史尝试另列，详见 [桌面补测](week3-friday-desktop-validation.md)。
+
+版本标识与源码打包记录由 `gui_agent/version.py`、`scripts/build_v2_release.py` 提供。v2.0 工程验收、真实桌面覆盖、本地模型质量与 NIM 联调分开记录，详见 [第三周周五记录](week3-friday.md)。

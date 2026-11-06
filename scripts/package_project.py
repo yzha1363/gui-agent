@@ -4,6 +4,7 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
+import re
 from pathlib import Path
 import zipfile
 
@@ -37,7 +38,9 @@ def portable(value):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--include-evidence', action='store_true', help='Include Friday JSON summaries and action logs, without screenshots')
+    parser.add_argument('--label', default='gui-agent-week1', help='Archive label; lowercase letters, digits, dots and hyphens')
     args = parser.parse_args()
+    if not re.fullmatch(r'[a-z0-9][a-z0-9.-]{0,63}', args.label): parser.error('Invalid archive label')
     entries = {path.relative_to(ROOT).as_posix(): path.read_bytes() for path in source_files()}
     if args.include_evidence:
         aggregate_path = ROOT / 'output/friday-test-summary.json'
@@ -68,7 +71,7 @@ def main():
     entries['manifest.json'] = json.dumps(manifest, ensure_ascii=False, indent=2).encode('utf-8')
     directory = ROOT / 'output/deliverables'
     directory.mkdir(parents=True, exist_ok=True)
-    archive = directory / ('gui-agent-week1-' + datetime.now().strftime('%Y%m%d_%H%M%S_%f') + '.zip')
+    archive = directory / (args.label + '-' + datetime.now().strftime('%Y%m%d_%H%M%S_%f') + '.zip')
     with zipfile.ZipFile(archive, 'x', compression=zipfile.ZIP_DEFLATED) as bundle:
         for name, data in sorted(entries.items()):
             bundle.writestr(name, data)

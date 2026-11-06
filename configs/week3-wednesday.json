@@ -1,0 +1,14 @@
+{
+  "training_config": "configs/week3-tuesday.json",
+  "training_run": "output/week3-tuesday/full-initial",
+  "variants": ["base", "best", "final"],
+  "prompts": ["original", "schema_v1"],
+  "selection_model": "best",
+  "primary_prompt": "original",
+  "seed": 42,
+  "max_new_tokens": 192,
+  "max_sequence_length": 1024,
+  "coordinate_tolerance_pixels": 10,
+  "do_sample": false,
+  "num_beams": 1
+}

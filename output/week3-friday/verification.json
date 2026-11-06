@@ -1,0 +1,1806 @@
+{
+  "created_at_utc": "2026-11-06T09:17:30.353674+00:00",
+  "version": "2.0.0",
+  "directory": "output/week3-friday/20261106T091722_627143Z",
+  "new_unit_tests": 22,
+  "full_project_tests": 347,
+  "project_check": "output\\project-checks\\20261106_201457_908770\\summary.json",
+  "desktop_fix_unit_tests": 5,
+  "robustness_cases": [
+    {
+      "case": "normal",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "completed",
+      "error_code": null,
+      "error_category": null,
+      "possible_dispatches": 3,
+      "input_calls": 3,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/normal/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "both_goal_channels": true,
+        "exact_actual_text_and_single_commit": true
+      },
+      "passed": true
+    },
+    {
+      "case": "layout_shifted",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "completed",
+      "error_code": null,
+      "error_category": null,
+      "possible_dispatches": 3,
+      "input_calls": 3,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/layout_shifted/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "both_goal_channels": true,
+        "exact_actual_text_and_single_commit": true
+      },
+      "passed": true
+    },
+    {
+      "case": "layout_moves",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "completed",
+      "error_code": null,
+      "error_category": null,
+      "possible_dispatches": 3,
+      "input_calls": 3,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/layout_moves/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "both_goal_channels": true,
+        "exact_actual_text_and_single_commit": true,
+        "uses_new_target_position": true
+      },
+      "passed": true
+    },
+    {
+      "case": "disappears_before_click",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "target_unavailable",
+      "error_category": "localization_failure",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 1,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/disappears_before_click/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "zero_input_after_reconfirmation_failure": true
+      },
+      "passed": true
+    },
+    {
+      "case": "duplicate_appears",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "AmbiguousTarget",
+      "error_category": "localization_failure",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/duplicate_appears/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "zero_input_after_reconfirmation_failure": true
+      },
+      "passed": true
+    },
+    {
+      "case": "duplicate",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "AmbiguousTarget",
+      "error_category": "localization_failure",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/duplicate/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "duplicate_second",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "completed",
+      "error_code": null,
+      "error_category": null,
+      "possible_dispatches": 3,
+      "input_calls": 3,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/duplicate_second/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "both_goal_channels": true,
+        "exact_actual_text_and_single_commit": true,
+        "explicit_second_target_used": true
+      },
+      "passed": true
+    },
+    {
+      "case": "overlap_second",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "AmbiguousTarget",
+      "error_category": "localization_failure",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/overlap_second/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "missing",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "target_unavailable",
+      "error_category": "localization_failure",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 1,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/missing/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "reappears",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "completed",
+      "error_code": null,
+      "error_category": null,
+      "possible_dispatches": 3,
+      "input_calls": 3,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/reappears/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "both_goal_channels": true,
+        "exact_actual_text_and_single_commit": true
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_text",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "error_category": "verification_failure",
+      "possible_dispatches": 2,
+      "input_calls": 2,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/wrong_text/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "ocr_false_positive",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "error_category": "verification_failure",
+      "possible_dispatches": 1,
+      "input_calls": 1,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/ocr_false_positive/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "state_false_positive",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "error_category": "verification_failure",
+      "possible_dispatches": 1,
+      "input_calls": 1,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/state_false_positive/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "state_type_changed",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "error_category": "verification_failure",
+      "possible_dispatches": 1,
+      "input_calls": 1,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/state_type_changed/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "stale_state",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "StateUnavailable",
+      "error_category": "state_unavailable",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/stale_state/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_hwnd",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "StateUnavailable",
+      "error_category": "state_unavailable",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/wrong_hwnd/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "partial_input",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "error_category": "execution_failure",
+      "possible_dispatches": 2,
+      "input_calls": 2,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/partial_input/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "submit_uncertain",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "error_category": "execution_failure",
+      "possible_dispatches": 3,
+      "input_calls": 3,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/submit_uncertain/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true,
+        "uncertain_submit_remains_failed": true
+      },
+      "passed": true
+    },
+    {
+      "case": "stop_after_focus",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "aborted",
+      "error_code": "StopRequested",
+      "error_category": "user_aborted",
+      "possible_dispatches": 1,
+      "input_calls": 1,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/stop_after_focus/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    },
+    {
+      "case": "permission_denied",
+      "kind": "simulated_geometry_and_injected_ocr_not_desktop",
+      "status": "failed",
+      "error_code": "PermissionError",
+      "error_category": "permission_denied",
+      "possible_dispatches": 0,
+      "input_calls": 0,
+      "replans": 0,
+      "summary": "output/week3-friday/20261106T091722_627143Z/robustness/permission_denied/session/summary.json",
+      "checks": {
+        "saved_summary_matches": true,
+        "expected_status_code_and_dispatches": true,
+        "no_click_on_stale_empty_location": true,
+        "no_duplicate_text_or_submit": true,
+        "within_shared_budgets": true,
+        "explicit_simulation": true,
+        "task_verification_not_forged": true
+      },
+      "passed": true
+    }
+  ],
+  "recovery_regression_cases": [
+    {
+      "case": "normal",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/normal/session/summary.json"
+    },
+    {
+      "case": "transient_state",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/transient_state/session/summary.json"
+    },
+    {
+      "case": "expired_snapshot",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/expired_snapshot/session/summary.json"
+    },
+    {
+      "case": "transient_target",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/transient_target/session/summary.json"
+    },
+    {
+      "case": "stale_patch",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/stale_patch/session/summary.json"
+    },
+    {
+      "case": "planning_change_once",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/planning_change_once/session/summary.json"
+    },
+    {
+      "case": "planning_change_always",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/planning_change_always/session/summary.json"
+    },
+    {
+      "case": "missing",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/missing/session/summary.json"
+    },
+    {
+      "case": "duplicate",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/duplicate/session/summary.json"
+    },
+    {
+      "case": "partial_input",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/partial_input/session/summary.json"
+    },
+    {
+      "case": "submitted_then_raise",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/submitted_then_raise/session/summary.json"
+    },
+    {
+      "case": "false_ocr",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/false_ocr/session/summary.json"
+    },
+    {
+      "case": "state_unavailable",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/state_unavailable/session/summary.json"
+    },
+    {
+      "case": "permission_denied",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/permission_denied/session/summary.json"
+    },
+    {
+      "case": "wrong_hwnd",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/wrong_hwnd/session/summary.json"
+    },
+    {
+      "case": "stop_during_delay",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/stop_during_delay/session/summary.json"
+    },
+    {
+      "case": "stop_during_model",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/stop_during_model/session/summary.json"
+    },
+    {
+      "case": "stop_after_input",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/stop_after_input/session/summary.json"
+    },
+    {
+      "case": "window_changed",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/window_changed/session/summary.json"
+    },
+    {
+      "case": "predispatch_changed",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/predispatch_changed/session/summary.json"
+    },
+    {
+      "case": "second_step_state_failure",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/second_step_state_failure/session/summary.json"
+    },
+    {
+      "case": "observation_limit",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/observation_limit/session/summary.json"
+    },
+    {
+      "case": "dispatch_limit",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/dispatch_limit/session/summary.json"
+    },
+    {
+      "case": "model_overrun",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/model_overrun/session/summary.json"
+    },
+    {
+      "case": "slow_observation",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/slow_observation/session/summary.json"
+    },
+    {
+      "case": "invalid_plan",
+      "kind": "simulation",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/recovery-regression/invalid_plan/session/summary.json"
+    },
+    {
+      "case": "normal",
+      "kind": "loopback_http_not_real_model",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/http-regression/normal/session/summary.json"
+    },
+    {
+      "case": "planning_change_once",
+      "kind": "loopback_http_not_real_model",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/http-regression/planning_change_once/session/summary.json"
+    },
+    {
+      "case": "rate_limited",
+      "kind": "loopback_http_not_real_model",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/http-regression/rate_limited/session/summary.json"
+    },
+    {
+      "case": "stop_during_model",
+      "kind": "loopback_http_not_real_model",
+      "passed": true,
+      "summary": "output/week3-friday/20261106T091722_627143Z/http-regression/stop_during_model/session/summary.json"
+    }
+  ],
+  "before_after_checks": {
+    "original_source_hash": true,
+    "old_stale_clicks_reproduced": true,
+    "old_ambiguity_was_not_blocked": true,
+    "fixed_layout_recovers": true,
+    "fixed_ambiguity_and_missing_stop_without_input": true
+  },
+  "status_counts": {
+    "completed": 5,
+    "failed": 14,
+    "aborted": 1
+  },
+  "failure_categories": {
+    "localization_failure": 5,
+    "verification_failure": 4,
+    "state_unavailable": 2,
+    "execution_failure": 2,
+    "user_aborted": 1,
+    "permission_denied": 1
+  },
+  "desktop_cases": [
+    {
+      "case": "duplicate",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "AmbiguousTarget",
+      "display": {
+        "window_hwnd": 789398,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 5.047341,
+      "action_log_entries": 0,
+      "screenshots": 5,
+      "summary": "output/week3-friday/desktop-validation/duplicate-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:01:09.753727+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "zero_real_input": true
+      },
+      "passed": true
+    },
+    {
+      "case": "duplicate_second",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 1511126,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 9.75701,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/duplicate_second-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:02:18.587846+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true,
+        "second_widget_selected": true
+      },
+      "passed": true
+    },
+    {
+      "case": "layout_moves",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 528346,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 10.896737,
+      "action_log_entries": 3,
+      "screenshots": 19,
+      "summary": "output/week3-friday/desktop-validation/layout_moves-01/summary.json",
+      "finished_at_utc": "2026-11-06T08:59:54.606942+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "layout_shifted",
+      "kind": "real_desktop_controlled_app",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 1379962,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 12.017739,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/layout_shifted-01/summary.json",
+      "finished_at_utc": "2026-11-06T08:57:08.141732+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "missing",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "target_unavailable",
+      "display": {
+        "window_hwnd": 724942,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 7.423893,
+      "action_log_entries": 0,
+      "screenshots": 12,
+      "summary": "output/week3-friday/desktop-validation/missing-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:03:05.231835+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "zero_real_input": true
+      },
+      "passed": true
+    },
+    {
+      "case": "normal",
+      "kind": "real_desktop_controlled_app",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 854940,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 29.954407,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/normal-02/summary.json",
+      "finished_at_utc": "2026-11-06T08:54:57.296149+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "ocr_false_positive",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "display": {
+        "window_hwnd": 1249230,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 11.081493,
+      "action_log_entries": 1,
+      "screenshots": 19,
+      "summary": "output/week3-friday/desktop-validation/ocr_false_positive-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:08:46.721709+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "injected_ocr_does_not_override_actual_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "partial_input",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "display": {
+        "window_hwnd": 1445838,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 7.341676,
+      "action_log_entries": 2,
+      "screenshots": 11,
+      "summary": "output/week3-friday/desktop-validation/partial_input-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:11:02.045592+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "only_partial_text_and_no_submit": true
+      },
+      "passed": true
+    },
+    {
+      "case": "stale_state",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "StateUnavailable",
+      "display": {
+        "window_hwnd": 921546,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 3.889243,
+      "action_log_entries": 0,
+      "screenshots": 1,
+      "summary": "output/week3-friday/desktop-validation/stale_state-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:10:14.900530+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "zero_real_input": true
+      },
+      "passed": true
+    },
+    {
+      "case": "submit_uncertain",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "display": {
+        "window_hwnd": 1773518,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 9.069567,
+      "action_log_entries": 3,
+      "screenshots": 14,
+      "summary": "output/week3-friday/desktop-validation/submit_uncertain-02/summary.json",
+      "finished_at_utc": "2026-11-06T09:14:42.233554+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "263f32702d4386d4f4a009d787023e0dc58771d9f2770ccc38e03a7bbe331262",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "commit_uncertainty_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_text",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "display": {
+        "window_hwnd": 1182698,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 12.74313,
+      "action_log_entries": 2,
+      "screenshots": 23,
+      "summary": "output/week3-friday/desktop-validation/wrong_text-02/summary.json",
+      "finished_at_utc": "2026-11-06T09:07:47.026826+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "wrong_text_was_not_submitted": true
+      },
+      "passed": true
+    }
+  ],
+  "desktop_attempts": [
+    {
+      "case": "duplicate",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "AmbiguousTarget",
+      "display": {
+        "window_hwnd": 789398,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 5.047341,
+      "action_log_entries": 0,
+      "screenshots": 5,
+      "summary": "output/week3-friday/desktop-validation/duplicate-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:01:09.753727+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "zero_real_input": true
+      },
+      "passed": true
+    },
+    {
+      "case": "duplicate_second",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 1511126,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 9.75701,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/duplicate_second-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:02:18.587846+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true,
+        "second_widget_selected": true
+      },
+      "passed": true
+    },
+    {
+      "case": "layout_moves",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 528346,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 10.896737,
+      "action_log_entries": 3,
+      "screenshots": 19,
+      "summary": "output/week3-friday/desktop-validation/layout_moves-01/summary.json",
+      "finished_at_utc": "2026-11-06T08:59:54.606942+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "layout_shifted",
+      "kind": "real_desktop_controlled_app",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 1379962,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 12.017739,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/layout_shifted-01/summary.json",
+      "finished_at_utc": "2026-11-06T08:57:08.141732+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "missing",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "target_unavailable",
+      "display": {
+        "window_hwnd": 724942,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 7.423893,
+      "action_log_entries": 0,
+      "screenshots": 12,
+      "summary": "output/week3-friday/desktop-validation/missing-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:03:05.231835+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "zero_real_input": true
+      },
+      "passed": true
+    },
+    {
+      "case": "normal",
+      "kind": "real_desktop_controlled_app",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 854940,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 29.954407,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/normal-02/summary.json",
+      "finished_at_utc": "2026-11-06T08:54:57.296149+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "both_goal_channels": true,
+        "actual_widget_text": true,
+        "goal_recomputed_from_raw_ocr_and_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "ocr_false_positive",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "display": {
+        "window_hwnd": 1249230,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 11.081493,
+      "action_log_entries": 1,
+      "screenshots": 19,
+      "summary": "output/week3-friday/desktop-validation/ocr_false_positive-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:08:46.721709+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "injected_ocr_does_not_override_actual_state": true
+      },
+      "passed": true
+    },
+    {
+      "case": "partial_input",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "display": {
+        "window_hwnd": 1445838,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 7.341676,
+      "action_log_entries": 2,
+      "screenshots": 11,
+      "summary": "output/week3-friday/desktop-validation/partial_input-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:11:02.045592+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "only_partial_text_and_no_submit": true
+      },
+      "passed": true
+    },
+    {
+      "case": "stale_state",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "StateUnavailable",
+      "display": {
+        "window_hwnd": 921546,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 3.889243,
+      "action_log_entries": 0,
+      "screenshots": 1,
+      "summary": "output/week3-friday/desktop-validation/stale_state-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:10:14.900530+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "zero_real_input": true
+      },
+      "passed": true
+    },
+    {
+      "case": "submit_uncertain",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 1314762,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 9.706413,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/submit_uncertain-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:12:02.329270+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": false,
+        "expected_code": false,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": false,
+        "commit_uncertainty_preserved": false
+      },
+      "passed": false
+    },
+    {
+      "case": "submit_uncertain",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "display": {
+        "window_hwnd": 1773518,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 9.069567,
+      "action_log_entries": 3,
+      "screenshots": 14,
+      "summary": "output/week3-friday/desktop-validation/submit_uncertain-02/summary.json",
+      "finished_at_utc": "2026-11-06T09:14:42.233554+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "263f32702d4386d4f4a009d787023e0dc58771d9f2770ccc38e03a7bbe331262",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "commit_uncertainty_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_text",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "observation_timeout",
+      "display": {
+        "window_hwnd": 724948,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 12.795296,
+      "action_log_entries": 2,
+      "screenshots": 22,
+      "summary": "output/week3-friday/desktop-validation/wrong_text-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:04:01.501323+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": false,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "wrong_text_was_not_submitted": true
+      },
+      "passed": false
+    },
+    {
+      "case": "wrong_text",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "display": {
+        "window_hwnd": 1182698,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 12.74313,
+      "action_log_entries": 2,
+      "screenshots": 23,
+      "summary": "output/week3-friday/desktop-validation/wrong_text-02/summary.json",
+      "finished_at_utc": "2026-11-06T09:07:47.026826+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_code": true,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "wrong_text_was_not_submitted": true
+      },
+      "passed": true
+    }
+  ],
+  "desktop_historical_failed_attempts": [
+    {
+      "case": "submit_uncertain",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "completed",
+      "error_code": null,
+      "display": {
+        "window_hwnd": 1314762,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 9.706413,
+      "action_log_entries": 3,
+      "screenshots": 16,
+      "summary": "output/week3-friday/desktop-validation/submit_uncertain-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:12:02.329270+00:00",
+      "source_sha256": {
+        "robustness_demo.py": "260048a64773c8346c522ee9574e1977192f443dee3157bab2ca504d0d793560",
+        "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+        "gui_agent/recovery.py": "2f3daa752e21845b583bc4d4e5d9c72c50c5f48dc5a47b2da003c01bad239704"
+      },
+      "checks": {
+        "expected_status": false,
+        "expected_code": false,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": false,
+        "commit_uncertainty_preserved": false
+      },
+      "passed": false
+    },
+    {
+      "case": "wrong_text",
+      "kind": "real_desktop_with_explicit_fault_injection",
+      "status": "failed",
+      "error_code": "observation_timeout",
+      "display": {
+        "window_hwnd": 724948,
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1920,
+          1080
+        ]
+      },
+      "end_to_end_wall_seconds": 12.795296,
+      "action_log_entries": 2,
+      "screenshots": 22,
+      "summary": "output/week3-friday/desktop-validation/wrong_text-01/summary.json",
+      "finished_at_utc": "2026-11-06T09:04:01.501323+00:00",
+      "source_sha256": {},
+      "checks": {
+        "expected_status": true,
+        "expected_code": false,
+        "real_session_record": true,
+        "screenshots_exist": true,
+        "window_hwnd_recorded": true,
+        "single_real_commit": true,
+        "replay_planning_label": true,
+        "real_model_still_pending": true,
+        "expected_dispatches": true,
+        "no_extra_native_actions": true,
+        "same_hwnd": true,
+        "declared_budgets_hold": true,
+        "goal_success_not_forged": true,
+        "wrong_text_was_not_submitted": true
+      },
+      "passed": false
+    }
+  ],
+  "desktop_launch_failures": [
+    {
+      "path": "output/week3-friday/desktop-validation/normal-01/launch-failure.json",
+      "status": "initialization_failed",
+      "kind": "sandbox_preflight_before_window_created",
+      "error": {
+        "code": "TclError",
+        "message": "Sandboxed process could not initialize the installed Tcl init.tcl; rerun in the authorized interactive session succeeded in creating the dedicated test window."
+      },
+      "desktop_input_sent": false
+    }
+  ],
+  "desktop_raw_files": 1229,
+  "desktop_validation": "completed_controlled_app",
+  "desktop_required_scenarios": [
+    "normal",
+    "layout_shifted",
+    "layout_moves",
+    "duplicate",
+    "duplicate_second",
+    "missing",
+    "wrong_text",
+    "ocr_false_positive",
+    "stale_state",
+    "partial_input",
+    "submit_uncertain"
+  ],
+  "desktop_missing_scenarios": [],
+  "real_model_validation": "pending",
+  "nim_validation": "pending",
+  "scale_200_validation": "pending",
+  "benchmark": {
+    "summary": "output\\week3-friday\\benchmark-isolated\\20261106_172257_862887\\summary.json",
+    "input_sha256": "ce0117eff1114e3701fe67c9c8090d45c96534847d4b5e2c9f6dd3730c251838",
+    "statistics": {
+      "import_ms": {
+        "n": 3,
+        "mean_ms": 1571.1,
+        "median_ms": 1561.58,
+        "p95_ms": 1596.48,
+        "min_ms": 1555.24,
+        "max_ms": 1596.48
+      },
+      "reader_init_ms": {
+        "n": 3,
+        "mean_ms": 4728.42,
+        "median_ms": 4717.29,
+        "p95_ms": 4800.82,
+        "min_ms": 4667.14,
+        "max_ms": 4800.82
+      },
+      "first_inference_ms": {
+        "n": 3,
+        "mean_ms": 16182.47,
+        "median_ms": 15953.45,
+        "p95_ms": 16788.64,
+        "min_ms": 15805.33,
+        "max_ms": 16788.64
+      },
+      "cold_ready_ms": {
+        "n": 3,
+        "mean_ms": 22492.2,
+        "median_ms": 22320.37,
+        "p95_ms": 23062.67,
+        "min_ms": 22093.55,
+        "max_ms": 23062.67
+      },
+      "process_wall_ms": {
+        "n": 3,
+        "mean_ms": 28483.01,
+        "median_ms": 28349.16,
+        "p95_ms": 28834.95,
+        "min_ms": 28264.91,
+        "max_ms": 28834.95
+      },
+      "warm_inference_ms": {
+        "n": 15,
+        "mean_ms": 1049.42,
+        "median_ms": 1043.62,
+        "p95_ms": 1147.9,
+        "min_ms": 865.83,
+        "max_ms": 1147.9
+      }
+    },
+    "cold_definition": "Fresh Python process, cached model files and OS caches; not reboot-cold or download time.",
+    "warm_definition": "Same reader and identical image after its first inference; GPU synchronized after every call."
+  },
+  "source_sha256": {
+    "gui_workflow/recovery.py": "eea3c70b9a6569bfd4b8288c839fd721c98d26cacc2222a53df153368e1e6703",
+    "gui_tasks/robustness.py": "5fe6ca9f1bfbe5ca7e8b8a760433549c6fbd83a851c229ee81d706b34172e771",
+    "gui_tasks/desktop_faults.py": "946547985cdf33d9ec1abeec13ea23c2037f7191577c07c748469482da015961",
+    "gui_agent/version.py": "38dbadc540dc921cbeacf97fc0071e7047d02fb805ea13b27c0ef3c73ca74921",
+    "robustness_demo.py": "263f32702d4386d4f4a009d787023e0dc58771d9f2770ccc38e03a7bbe331262",
+    "run_robustness.py": "8f0db2e226a57196e5a398da42cf714243840377e014478040bdb2ae33d381a1"
+  },
+  "offline_all_passed": true,
+  "desktop_all_passed": true,
+  "all_completed_checks_passed": true
+}

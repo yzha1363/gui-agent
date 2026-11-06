@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-11-06T06:32:00.580968+00:00",
+  "version": "2.0.0",
+  "milestone": "bounded-recovery-and-robustness",
+  "source_archive": "output/deliverables/gui-agent-v2.0.0-20261106_173200_519022.zip",
+  "archive_sha256": "aa4c7304d59ccb298ba515e865a16084f5a3a9ced8c31569237a7f0a8af2a17c",
+  "source_file_count": 167,
+  "source_archive_has_model_weights": false,
+  "source_archive_has_desktop_images": false,
+  "verification": "output\\week3-friday\\verification.json",
+  "verification_sha256": "e1f66fd38fac034c7e9fb9516de08e2040e7661bfc058969764efaed93165c17",
+  "full_project_tests": 342,
+  "new_friday_tests": 22,
+  "robustness_scenarios": 20,
+  "recovery_regression_scenarios": 30,
+  "offline_accepted": true,
+  "desktop_validation": "pending_or_incomplete",
+  "desktop_deferred_by_user": true,
+  "pending": [
+    "Real desktop robustness was deferred by the user for this delivery.",
+    "NIM real inference remains unverified.",
+    "Local model action-schema/annotation quality did not pass Wednesday evaluation.",
+    "200% Windows scaling and broader application coverage remain unverified."
+  ],
+  "scope": "Development milestone; offline engineering checks are separate from model capability and desktop acceptance."
+}
