@@ -1,0 +1,45 @@
+{
+  "status": "plan",
+  "reason": "Focus the input, enter the requested text, then submit and confirm both channels.",
+  "subtasks": [
+    {
+      "id": "focus",
+      "goal": "Focus the input field",
+      "depends_on": [],
+      "steps": [
+        {
+          "name": "focus_input",
+          "action": "click_text",
+          "text": "INPUT FIELD",
+          "expect": {"text": "INPUT READY", "state": {"input_focused": true, "status": "INPUT READY"}}
+        }
+      ]
+    },
+    {
+      "id": "enter",
+      "goal": "Enter the exact requested text",
+      "depends_on": ["focus"],
+      "steps": [
+        {
+          "name": "enter_text",
+          "action": "type_text",
+          "text": "Hello GUI 123 中文测试",
+          "expect": {"text": "Hello GUI 123 中文测试", "min_confidence": 0.3, "state": {"entry_text": "Hello GUI 123 中文测试"}}
+        }
+      ]
+    },
+    {
+      "id": "submit",
+      "goal": "Submit and confirm the application result",
+      "depends_on": ["enter"],
+      "steps": [
+        {
+          "name": "submit_and_confirm",
+          "action": "click_text",
+          "text": "SUBMIT",
+          "expect": {"text": "SUBMITTED Hello GUI 123 中文测试", "min_confidence": 0.3, "state": {"submitted": "SUBMITTED Hello GUI 123 中文测试", "submit_enabled": true}}
+        }
+      ]
+    }
+  ]
+}

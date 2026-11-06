@@ -1,4 +1,5 @@
 .venv/
+.venv-training/
 __pycache__/
 *.pyc
 models/
@@ -23,10 +24,26 @@ output/*
 # Only non-sensitive verification summaries are versionable; requests/images stay local.
 output/week2-tuesday/*
 !output/week2-tuesday/verification.json
+!output/week2-wednesday/
+output/week2-wednesday/*
+!output/week2-wednesday/verification.json
+!output/week2-thursday/
+output/week2-thursday/*
+!output/week2-thursday/verification.json
+!output/week2-friday/
+output/week2-friday/*
+!output/week2-friday/verification.json
 
 # Downloaded public data and derivatives stay local with their source licenses.
 data/week2/raw/
 data/week2/processed/
+data/week3/
+!output/week3-monday/
+output/week3-monday/*
+!output/week3-monday/verification.json
+!output/week3-tuesday/
+output/week3-tuesday/*
+!output/week3-tuesday/verification.json
 
 # Editor/Office transient files and local credentials.
 ~$*

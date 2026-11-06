@@ -24,6 +24,7 @@ def main():
     parser.add_argument('--output', type=Path, default=ROOT / 'output' / 'friday-demo')
     parser.add_argument('--autorun', action='store_true', help='Run the controlled test app and close after saving results')
     parser.add_argument('--expected-scale', type=int, choices=[100, 125, 200])
+    parser.add_argument('--agent-replay', type=Path, help='Use the integrated planner/session with an explicit replay reply')
     args = parser.parse_args()
     enable_dpi_awareness()
     root = tk.Tk()
@@ -96,7 +97,9 @@ def main():
             plan = validate_plan(json.loads((ROOT / 'plans/friday_demo.json').read_text(encoding='utf-8')))
             if state['mode'] in {'no_change', 'false_ocr'}:
                 plan['steps'][0]['timeout'] = 1
-            with DesktopController(TITLE, log_path=directory / 'actions.jsonl') as control:
+            from gui_control.unicode_input import click_button
+            with DesktopController(TITLE, log_path=directory / 'actions.jsonl',
+                                   click_sender=click_button if args.agent_replay else None) as control:
                 state['control'] = control
                 observer = ScreenObserver(control, directory, 'cuda', state_provider=StateFile(state_path, control))
                 if state['mode'] == 'false_ocr':
@@ -110,7 +113,20 @@ def main():
                             (snapshot.directory / 'results.json').write_text(json.dumps(snapshot.report, ensure_ascii=False, indent=2), encoding='utf-8')
                         return snapshot
                     observer.observe = injected_observe
-                result = WorkflowRunner(control, observer, directory).run(plan)
+                if args.agent_replay:
+                    from gui_agent import GuiPlanner, ReplayClient
+                    from gui_agent.session import AgentSession
+                    from gui_agent.simulation import FIELDS, INSTRUCTION
+                    reply = json.loads(args.agent_replay.read_text(encoding='utf-8'))
+                    if state['mode'] in {'no_change', 'false_ocr'}:
+                        reply['subtasks'][0]['steps'][0]['timeout'] = 1
+                    planner = GuiPlanner(ReplayClient(json.dumps(reply, ensure_ascii=False)))
+                    goal = json.loads((ROOT / 'docs/agent-goal.example.json').read_text(encoding='utf-8'))
+                    result = AgentSession(control, observer, planner, directory / 'agent',
+                                          progress=lambda stage: print('Agent stage: ' + stage, flush=True)).run(
+                        INSTRUCTION, TITLE, FIELDS, goal, execute=True)
+                else:
+                    result = WorkflowRunner(control, observer, directory).run(plan)
                 result['scenario'] = state['mode']
                 result['display'] = display
                 result['state_write_denials'] = state['state_write_denials']
@@ -131,6 +147,9 @@ def main():
         if state['running']:
             return
         reset()
+        if args.agent_replay:
+            root.lift()
+            root.focus_force()
         state['running'] = True
         progress.set('Running. Waiting for observed results after each action...')
         threading.Thread(target=worker, daemon=True).start()

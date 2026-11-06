@@ -80,7 +80,7 @@ class WindowGuard:
 
 class DesktopController:
     def __init__(self, window_title, pause=0.25, log_path='output/thursday/actions.jsonl',
-                 backend=None, guard=None, listen=True):
+                 backend=None, guard=None, listen=True, click_sender=None):
         enable_dpi_awareness()  # Must precede imports that inspect display metrics.
         if not math.isfinite(pause) or pause < 0.1:
             raise ValueError('Pause must be at least 0.1 seconds.')
@@ -88,6 +88,7 @@ class DesktopController:
             import pyautogui
             backend = pyautogui
         self.backend = backend
+        self.click_sender = click_sender
         self.backend.FAILSAFE = True
         self.backend.PAUSE = pause
         self.guard = guard if guard is not None else WindowGuard(window_title)
@@ -174,7 +175,12 @@ class DesktopController:
             self.backend.moveTo(*point, duration=0.2)
             for _ in range(clicks):
                 self.check(point)
-                self.backend.click(*point, button=button)
+                if self.click_sender is None:
+                    self.backend.click(*point, button=button)
+                else:
+                    if tuple(self.backend.position()) != point:
+                        raise ControlError('Pointer did not reach the guarded target; no click dispatched.')
+                    self.click_sender(button)
         return self.action('click', {'x': x, 'y': y, 'clicks': clicks, 'button': button}, perform)
 
     def type_text(self, text, interval=0.02):

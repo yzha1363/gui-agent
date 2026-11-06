@@ -1,0 +1,533 @@
+{
+  "created_at_utc": "2026-10-27T08:35:24.536981+00:00",
+  "directory": "output/week2-thursday/20261027T083523_487770Z",
+  "unit_test_count": 37,
+  "unit_cases": [
+    {
+      "case": "tests.test_session.CheckedMouseTests.test_checked_sender_stops_when_pointer_move_did_not_take_effect",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedMouseTests.test_controller_checked_sender_does_not_also_call_legacy_click",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedMouseTests.test_failed_event_preserves_native_error_code_without_replaying",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedMouseTests.test_partial_click_only_releases_without_second_down",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedMouseTests.test_rejected_click_does_not_retry",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedMouseTests.test_successful_sendinput_contains_down_then_up",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedUnicodeTests.test_chinese_character_is_sent_as_individual_down_and_up",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedUnicodeTests.test_failed_unicode_key_up_only_releases_then_stops",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.CheckedUnicodeTests.test_non_bmp_character_preserves_utf16_surrogate_pair",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.InputDiagnosticTests.test_probe_reports_unexpected_nonzero_without_treating_it_as_success",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.InputDiagnosticTests.test_probe_requests_zero_events_without_mouse_or_keyboard_payload",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_cli_cannot_claim_no_input_after_uncertain_session_io_failure",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_cli_demo_runs_the_simulated_closed_loop",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_cli_execution_requires_trusted_goal_before_desktop_access",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_duplicate_target_stops_without_input",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_forged_ocr_is_blocked_by_independent_state",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_missing_target_reobserves_without_dispatch",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_no_change_sends_input_once",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_partial_input_failure_is_not_replayed",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFailureTests.test_valid_steps_cannot_override_a_different_caller_goal",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_actual_adapter_must_export_declared_fields",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_failed_model_request_is_not_retried",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_full_loop_verifies_three_steps_and_caller_goal",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_goal_already_met_requires_both_channels_and_no_model",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_goal_ocr_without_state_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_later_invalid_model_action_blocks_all_execution",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_live_context_contains_actual_ocr_state_and_trusted_goal",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_missing_goal_rejected_before_model_or_input",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_missing_independent_state_stops_before_model",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_model_clarification_is_returned_without_execution",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_model_done_cannot_forge_task_completion",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_preview_plans_without_dispatching",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_simulated_capture_cannot_enter_desktop_session",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_state_change_during_model_wait_prevents_input",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_stop_during_planning_is_checked_before_input",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_stop_requested_during_model_timeout_takes_precedence",
+      "passed": true
+    },
+    {
+      "case": "tests.test_session.SessionFlowTests.test_window_change_during_planning_is_guard_failure",
+      "passed": true
+    }
+  ],
+  "integration_cases": [
+    {
+      "case": "normal",
+      "kind": "simulated_app_and_ocr",
+      "status": "completed",
+      "error_code": null,
+      "dispatches": 3,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/normal/session/summary.json"
+    },
+    {
+      "case": "duplicate",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "AmbiguousTarget",
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/duplicate/session/summary.json"
+    },
+    {
+      "case": "missing",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "target_unavailable",
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/missing/session/summary.json"
+    },
+    {
+      "case": "no_change",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "dispatches": 1,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/no_change/session/summary.json"
+    },
+    {
+      "case": "false_ocr",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "verification_timeout",
+      "dispatches": 1,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/false_ocr/session/summary.json"
+    },
+    {
+      "case": "partial_input",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "RuntimeError",
+      "dispatches": 2,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/partial_input/session/summary.json"
+    },
+    {
+      "case": "preview",
+      "kind": "simulated_app_and_ocr",
+      "status": "planned",
+      "error_code": null,
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/preview/session/summary.json"
+    },
+    {
+      "case": "state_changed",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "planning_context_changed",
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/state_changed/session/summary.json"
+    },
+    {
+      "case": "stopped",
+      "kind": "simulated_app_and_ocr",
+      "status": "aborted",
+      "error_code": "StopRequested",
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/stopped/session/summary.json"
+    },
+    {
+      "case": "model_done",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "model_done_unverified",
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/model_done/session/summary.json"
+    },
+    {
+      "case": "clarify",
+      "kind": "simulated_app_and_ocr",
+      "status": "needs_clarification",
+      "error_code": null,
+      "dispatches": 0,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/clarify/session/summary.json"
+    },
+    {
+      "case": "goal_mismatch",
+      "kind": "simulated_app_and_ocr",
+      "status": "failed",
+      "error_code": "goal_not_met",
+      "dispatches": 3,
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/goal_mismatch/session/summary.json"
+    },
+    {
+      "case": "http_ok",
+      "kind": "loopback_http_and_simulated_execution",
+      "status": "completed",
+      "transport": {
+        "has_live_ocr": true,
+        "has_actual_state": true,
+        "has_caller_goal": true,
+        "image_size_ok": true
+      },
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/http_ok/session/summary.json"
+    },
+    {
+      "case": "http_bad",
+      "kind": "loopback_http_and_simulated_execution",
+      "status": "failed",
+      "transport": {
+        "has_live_ocr": true,
+        "has_actual_state": true,
+        "has_caller_goal": true,
+        "image_size_ok": true
+      },
+      "passed": true,
+      "summary": "output/week2-thursday/20261027T083523_487770Z/http_bad/session/summary.json"
+    }
+  ],
+  "offline_all_passed": true,
+  "desktop_attempts": [
+    {
+      "summary": "output/week2-thursday/desktop-normal/20261027_173510_356885/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 6818860,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 1,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "summary": "output/week2-thursday/desktop-normal/20261027_174043_905449/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "OSError",
+        "category": "execution_failure",
+        "message": "Mouse SendInput accepted 1/2 events; no click retry."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 7081004,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 0,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "summary": "output/week2-thursday/desktop-normal/20261027_175059_026436/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "OSError",
+        "category": "execution_failure",
+        "message": "Mouse SendInput accepted 1/2 events; no click retry."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 6491164,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 0,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "summary": "output/week2-thursday/desktop-normal/20261027_175330_409425/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "OSError",
+        "category": "execution_failure",
+        "message": "Mouse down SendInput accepted 0/1 event; no input retry."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 6557002,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 0,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "summary": "output/week2-thursday/desktop-normal/20261027_180733_632796/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "InputSendError",
+        "category": "execution_failure",
+        "message": "Mouse down SendInput accepted 0/1 event; no input retry. Win32 error=87."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 6294456,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 0,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "summary": "output/week2-thursday/desktop-normal/20261027_193238_195187/summary.json",
+      "status": "completed",
+      "environment": "desktop",
+      "success": true,
+      "task_verified": true,
+      "error": null,
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 199380,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 3,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "summary": "output/week2-thursday/desktop-false-ocr/20261027_193356_948040/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 199398,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 1,
+      "client_kind": "replay",
+      "scenario": "false_ocr"
+    }
+  ],
+  "desktop_cases": [
+    {
+      "case": "desktop-normal",
+      "passed": true,
+      "assertions": {
+        "three_steps_double_checked": true,
+        "caller_goal_double_checked": true,
+        "observation_assets_exist": true
+      },
+      "summary": "output/week2-thursday/desktop-normal/20261027_193238_195187/summary.json",
+      "status": "completed",
+      "environment": "desktop",
+      "success": true,
+      "task_verified": true,
+      "error": null,
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 199380,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 3,
+      "client_kind": "replay",
+      "scenario": "normal"
+    },
+    {
+      "case": "desktop-false-ocr",
+      "passed": true,
+      "assertions": {
+        "ocr_false_positive_rejected": true,
+        "one_step_only": true,
+        "observation_assets_exist": true
+      },
+      "summary": "output/week2-thursday/desktop-false-ocr/20261027_193356_948040/summary.json",
+      "status": "failed",
+      "environment": "desktop",
+      "success": false,
+      "task_verified": false,
+      "error": {
+        "code": "verification_timeout",
+        "category": "verification_failure",
+        "message": "OCR and independent state did not both meet expectations; input will not be repeated."
+      },
+      "display": {
+        "dpi": 96,
+        "scale_percent": 100,
+        "screen_physical_pixels": [
+          1568,
+          1080
+        ],
+        "window_hwnd": 199398,
+        "dpi_source": "GetDpiForWindow"
+      },
+      "actions_completed": 1,
+      "client_kind": "replay",
+      "scenario": "false_ocr"
+    }
+  ],
+  "desktop_validation": "passed",
+  "real_model_validation": "pending",
+  "project_check": "output/project-checks/20261027_181355_482531/summary.json",
+  "full_project_tests": 185,
+  "full_project_passed": true,
+  "all_passed": true
+}

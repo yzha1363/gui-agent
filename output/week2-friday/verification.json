@@ -1,0 +1,1044 @@
+{
+  "created_at_utc": "2026-10-27T11:37:46.865759+00:00",
+  "directory": "output/week2-friday/20261027T113745_094152Z",
+  "unit_test_count": 26,
+  "unit_cases": [
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_all_five_tasks_compile_and_verify_independent_goals",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_duplicate_focus_never_types_or_sends",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_false_ocr_cannot_open_file",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_missing_focus_never_types",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_no_change_does_not_replay_open",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_permission_cause_is_separate_from_verification_timeout",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskFlowTests.test_success_status_without_goal_evidence_is_not_accepted",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_arbitrary_file_path_or_event_is_not_supported",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_failed_lifecycle_cannot_set_success_state",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_file_hash_is_computed_from_actual_bytes",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_input_without_focus_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_message_retry_keeps_one_inbox_item",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_permission_denial_does_not_claim_file_open",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_real_permission_error_is_exported",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_reused_message_id_with_changed_text_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_snapshot_cannot_mutate_backend_state",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.BasicTaskStateTests.test_unknown_search_does_not_forge_a_match",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.LocalWebAdapterTests.test_arbitrary_body_fields_cannot_choose_a_file",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.LocalWebAdapterTests.test_other_origins_are_rejected_without_effects",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.LocalWebAdapterTests.test_page_and_event_really_cross_loopback_http",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.LocalWebAdapterTests.test_unknown_routes_do_not_expose_local_files",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.OwnedBrowserBoundaryTests.test_changed_window_title_is_never_closed",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.OwnedBrowserBoundaryTests.test_owned_window_gets_one_graceful_close",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.OwnedBrowserBoundaryTests.test_reused_hwnd_with_different_pid_is_never_closed",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.OwnedBrowserBoundaryTests.test_title_change_does_not_count_as_closed",
+      "passed": true
+    },
+    {
+      "case": "tests.test_basic_tasks.OwnedBrowserBoundaryTests.test_unowned_window_cannot_be_focused",
+      "passed": true
+    }
+  ],
+  "simulation_report": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\summary.json",
+  "simulation_cases": [
+    {
+      "case": "open_browser",
+      "fault": "none",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true
+      },
+      "dispatches": 1,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_browser-none\\observations\\0005_agent_goal",
+      "elapsed_seconds": 0.050279,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_browser-none\\session\\summary.json"
+    },
+    {
+      "case": "search",
+      "fault": "none",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true
+      },
+      "dispatches": 3,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\search-none\\observations\\0009_agent_goal",
+      "elapsed_seconds": 0.077471,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\search-none\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "none",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true
+      },
+      "dispatches": 1,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-none\\observations\\0005_agent_goal",
+      "elapsed_seconds": 0.044431,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-none\\session\\summary.json"
+    },
+    {
+      "case": "send_message",
+      "fault": "none",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true
+      },
+      "dispatches": 3,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\send_message-none\\observations\\0009_agent_goal",
+      "elapsed_seconds": 0.076764,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\send_message-none\\session\\summary.json"
+    },
+    {
+      "case": "close_app",
+      "fault": "none",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true
+      },
+      "dispatches": 1,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\close_app-none\\observations\\0005_agent_goal",
+      "elapsed_seconds": 0.042922,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\close_app-none\\session\\summary.json"
+    },
+    {
+      "case": "search",
+      "fault": "missing",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "no_dispatch": true
+      },
+      "dispatches": 0,
+      "error_code": "target_unavailable",
+      "failure_category": "localization_failure",
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\search-missing\\observations\\0004_step01_before2",
+      "elapsed_seconds": 0.040642,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\search-missing\\session\\summary.json"
+    },
+    {
+      "case": "search",
+      "fault": "duplicate",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "no_dispatch": true
+      },
+      "dispatches": 0,
+      "error_code": "AmbiguousTarget",
+      "failure_category": "localization_failure",
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\search-duplicate\\observations\\0003_step01_before1",
+      "elapsed_seconds": 0.037419,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\search-duplicate\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "no_change",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "one_dispatch": true
+      },
+      "dispatches": 1,
+      "error_code": "verification_timeout",
+      "failure_category": "verification_failure",
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-no_change\\observations\\0006_step01_after3",
+      "elapsed_seconds": 0.044981,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-no_change\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "false_ocr",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "one_dispatch": true,
+        "false_positive_rejected": true,
+        "saved_false_positive_rechecked": true
+      },
+      "dispatches": 1,
+      "error_code": "verification_timeout",
+      "failure_category": "verification_failure",
+      "application_cause": null,
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-false_ocr\\observations\\0006_step01_after3",
+      "elapsed_seconds": 0.045671,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-false_ocr\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "permission_denied",
+      "environment": "simulation",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "one_dispatch": true,
+        "explicit_denial_observed": true
+      },
+      "dispatches": 1,
+      "error_code": "verification_timeout",
+      "failure_category": "verification_failure",
+      "application_cause": "permission_denied",
+      "evidence_directory": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-permission_denied\\observations\\0006_step01_after3",
+      "elapsed_seconds": 0.047204,
+      "summary": "D:\\study\\实习\\output\\week2-friday\\20261027T113745_094152Z\\simulation\\open_file-permission_denied\\session\\summary.json"
+    }
+  ],
+  "offline_all_passed": true,
+  "desktop_attempts": [
+    {
+      "report": "output\\week2-friday\\desktop-smoke\\summary.json",
+      "cases": [
+        {
+          "case": "open_file",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "TimeoutError",
+          "failure_category": "execution_failure",
+          "message": "Isolated browser window did not appear."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-smoke-unrestricted\\summary.json",
+      "cases": [
+        {
+          "case": "open_file",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "FocusLost",
+          "failure_category": "window_guard_failure",
+          "message": "Foreground window must be 'GUI Basic open_file ac1f8d6ad8'; found 'Scritchy Scratchy'."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-smoke-focus\\summary.json",
+      "cases": [
+        {
+          "case": "open_file",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "FocusLost",
+          "failure_category": "window_guard_failure",
+          "message": "Foreground window must be 'GUI Basic open_file 0a84ae807b'; found 'Scritchy Scratchy'."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-lifecycle-initial\\summary.json",
+      "cases": [
+        {
+          "case": "open_browser",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "FocusLost",
+          "failure_category": "window_guard_failure",
+          "message": "Foreground window must be 'GUI Lifecycle cd4ef9d48c'; found 'Scritchy Scratchy'."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-ready-smoke\\summary.json",
+      "cases": [
+        {
+          "case": "open_file",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 1,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-ready-smoke\\open_file-none\\observations\\0006_agent_goal",
+          "elapsed_seconds": 2.858366,
+          "summary": "output\\week2-friday\\desktop-ready-smoke\\open_file-none\\session\\summary.json"
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "report": "output\\week2-friday\\desktop-full\\summary.json",
+      "cases": [
+        {
+          "case": "open_browser",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true,
+            "owned_browser_lifecycle": true
+          },
+          "dispatches": 1,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\open_browser-none\\observations\\0006_agent_goal",
+          "elapsed_seconds": 3.059044,
+          "summary": "output\\week2-friday\\desktop-full\\open_browser-none\\session\\summary.json"
+        },
+        {
+          "case": "search",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 3,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\search-none\\observations\\0011_agent_goal",
+          "elapsed_seconds": 5.064147,
+          "summary": "output\\week2-friday\\desktop-full\\search-none\\session\\summary.json"
+        },
+        {
+          "case": "open_file",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 1,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-none\\observations\\0006_agent_goal",
+          "elapsed_seconds": 2.513047,
+          "summary": "output\\week2-friday\\desktop-full\\open_file-none\\session\\summary.json"
+        },
+        {
+          "case": "send_message",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 3,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\send_message-none\\observations\\0012_agent_goal",
+          "elapsed_seconds": 6.261799,
+          "summary": "output\\week2-friday\\desktop-full\\send_message-none\\session\\summary.json"
+        },
+        {
+          "case": "close_app",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true,
+            "owned_browser_lifecycle": true
+          },
+          "dispatches": 1,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\close_app-none\\observations\\0005_agent_goal",
+          "elapsed_seconds": 1.616184,
+          "summary": "output\\week2-friday\\desktop-full\\close_app-none\\session\\summary.json"
+        },
+        {
+          "case": "search",
+          "fault": "missing",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "failed",
+          "task_verified": false,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "no_dispatch": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 0,
+          "error_code": "target_unavailable",
+          "failure_category": "localization_failure",
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\search-missing\\observations\\0004_step01_before2",
+          "elapsed_seconds": 1.48689,
+          "summary": "output\\week2-friday\\desktop-full\\search-missing\\session\\summary.json"
+        },
+        {
+          "case": "search",
+          "fault": "duplicate",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "failed",
+          "task_verified": false,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "no_dispatch": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 0,
+          "error_code": "AmbiguousTarget",
+          "failure_category": "localization_failure",
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\search-duplicate\\observations\\0003_step01_before1",
+          "elapsed_seconds": 0.810041,
+          "summary": "output\\week2-friday\\desktop-full\\search-duplicate\\session\\summary.json"
+        },
+        {
+          "case": "open_file",
+          "fault": "no_change",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "failed",
+          "task_verified": false,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "one_dispatch": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 1,
+          "error_code": "verification_timeout",
+          "failure_category": "verification_failure",
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-no_change\\observations\\0006_step01_after3",
+          "elapsed_seconds": 2.533557,
+          "summary": "output\\week2-friday\\desktop-full\\open_file-no_change\\session\\summary.json"
+        },
+        {
+          "case": "open_file",
+          "fault": "false_ocr",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "failed",
+          "task_verified": false,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "one_dispatch": true,
+            "false_positive_rejected": true,
+            "saved_false_positive_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 1,
+          "error_code": "verification_timeout",
+          "failure_category": "verification_failure",
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-false_ocr\\observations\\0006_step01_after3",
+          "elapsed_seconds": 2.467549,
+          "summary": "output\\week2-friday\\desktop-full\\open_file-false_ocr\\session\\summary.json"
+        },
+        {
+          "case": "open_file",
+          "fault": "permission_denied",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "failed",
+          "task_verified": false,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "one_dispatch": true,
+            "explicit_denial_observed": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true
+          },
+          "dispatches": 1,
+          "error_code": "verification_timeout",
+          "failure_category": "verification_failure",
+          "application_cause": "permission_denied",
+          "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-permission_denied\\observations\\0006_step01_after3",
+          "elapsed_seconds": 2.482429,
+          "summary": "output\\week2-friday\\desktop-full\\open_file-permission_denied\\session\\summary.json"
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "report": "output\\week2-friday\\desktop-open-final\\summary.json",
+      "cases": [
+        {
+          "case": "open_browser",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "FocusLost",
+          "failure_category": "window_guard_failure",
+          "message": "Foreground window must be 'GUI Lifecycle 124cb45f4f'; found 'Scritchy Scratchy'."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-open-final-ready\\summary.json",
+      "cases": [
+        {
+          "case": "open_browser",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "FocusLost",
+          "failure_category": "window_guard_failure",
+          "message": "Foreground window must be 'GUI Lifecycle 49dc8bc832'; found 'Scritchy Scratchy'."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-open-final-cua\\summary.json",
+      "cases": [
+        {
+          "case": "open_browser",
+          "fault": "none",
+          "environment": "desktop",
+          "status": "initialization_failed",
+          "task_verified": false,
+          "passed": false,
+          "error_code": "FocusLost",
+          "failure_category": "window_guard_failure",
+          "message": "Foreground window must be 'GUI Lifecycle 2b64df15e6'; found 'agent_cli.py - 实习 - Visual Studio Code'."
+        }
+      ],
+      "all_passed": false
+    },
+    {
+      "report": "output\\week2-friday\\desktop-close-final-cua\\summary.json",
+      "cases": [
+        {
+          "case": "close_app",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true,
+            "owned_browser_lifecycle": true
+          },
+          "dispatches": 1,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-close-final-cua\\close_app-none\\observations\\0005_agent_goal",
+          "elapsed_seconds": 1.998562,
+          "summary": "output\\week2-friday\\desktop-close-final-cua\\close_app-none\\session\\summary.json"
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "report": "output\\week2-friday\\desktop-open-verified\\summary.json",
+      "cases": [
+        {
+          "case": "open_browser",
+          "fault": "none",
+          "environment": "desktop",
+          "client_kind": "replay",
+          "status": "completed",
+          "task_verified": true,
+          "passed": true,
+          "assertions": {
+            "last_observation_assets_exist": true,
+            "step_count": true,
+            "steps_double_checked": true,
+            "goal_double_checked": true,
+            "saved_evidence_rechecked": true,
+            "input_log_matches_dispatches": true,
+            "browser_identity_recorded": true,
+            "owned_browser_lifecycle": true
+          },
+          "dispatches": 1,
+          "error_code": null,
+          "failure_category": null,
+          "application_cause": null,
+          "evidence_directory": "output\\week2-friday\\desktop-open-verified\\open_browser-none\\observations\\0006_agent_goal",
+          "elapsed_seconds": 2.869823,
+          "summary": "output\\week2-friday\\desktop-open-verified\\open_browser-none\\session\\summary.json"
+        }
+      ],
+      "all_passed": true
+    }
+  ],
+  "desktop_cases": [
+    {
+      "case": "open_file",
+      "fault": "none",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 1,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-none\\observations\\0006_agent_goal",
+      "elapsed_seconds": 2.513047,
+      "summary": "output\\week2-friday\\desktop-full\\open_file-none\\session\\summary.json"
+    },
+    {
+      "case": "open_browser",
+      "fault": "none",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true,
+        "owned_browser_lifecycle": true
+      },
+      "dispatches": 1,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-open-verified\\open_browser-none\\observations\\0006_agent_goal",
+      "elapsed_seconds": 2.869823,
+      "summary": "output\\week2-friday\\desktop-open-verified\\open_browser-none\\session\\summary.json"
+    },
+    {
+      "case": "search",
+      "fault": "none",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 3,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\search-none\\observations\\0011_agent_goal",
+      "elapsed_seconds": 5.064147,
+      "summary": "output\\week2-friday\\desktop-full\\search-none\\session\\summary.json"
+    },
+    {
+      "case": "send_message",
+      "fault": "none",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 3,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\send_message-none\\observations\\0012_agent_goal",
+      "elapsed_seconds": 6.261799,
+      "summary": "output\\week2-friday\\desktop-full\\send_message-none\\session\\summary.json"
+    },
+    {
+      "case": "close_app",
+      "fault": "none",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "completed",
+      "task_verified": true,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "step_count": true,
+        "steps_double_checked": true,
+        "goal_double_checked": true,
+        "saved_evidence_rechecked": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true,
+        "owned_browser_lifecycle": true
+      },
+      "dispatches": 1,
+      "error_code": null,
+      "failure_category": null,
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-close-final-cua\\close_app-none\\observations\\0005_agent_goal",
+      "elapsed_seconds": 1.998562,
+      "summary": "output\\week2-friday\\desktop-close-final-cua\\close_app-none\\session\\summary.json"
+    },
+    {
+      "case": "search",
+      "fault": "missing",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "no_dispatch": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 0,
+      "error_code": "target_unavailable",
+      "failure_category": "localization_failure",
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\search-missing\\observations\\0004_step01_before2",
+      "elapsed_seconds": 1.48689,
+      "summary": "output\\week2-friday\\desktop-full\\search-missing\\session\\summary.json"
+    },
+    {
+      "case": "search",
+      "fault": "duplicate",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "no_dispatch": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 0,
+      "error_code": "AmbiguousTarget",
+      "failure_category": "localization_failure",
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\search-duplicate\\observations\\0003_step01_before1",
+      "elapsed_seconds": 0.810041,
+      "summary": "output\\week2-friday\\desktop-full\\search-duplicate\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "no_change",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "one_dispatch": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 1,
+      "error_code": "verification_timeout",
+      "failure_category": "verification_failure",
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-no_change\\observations\\0006_step01_after3",
+      "elapsed_seconds": 2.533557,
+      "summary": "output\\week2-friday\\desktop-full\\open_file-no_change\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "false_ocr",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "one_dispatch": true,
+        "false_positive_rejected": true,
+        "saved_false_positive_rechecked": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 1,
+      "error_code": "verification_timeout",
+      "failure_category": "verification_failure",
+      "application_cause": null,
+      "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-false_ocr\\observations\\0006_step01_after3",
+      "elapsed_seconds": 2.467549,
+      "summary": "output\\week2-friday\\desktop-full\\open_file-false_ocr\\session\\summary.json"
+    },
+    {
+      "case": "open_file",
+      "fault": "permission_denied",
+      "environment": "desktop",
+      "client_kind": "replay",
+      "status": "failed",
+      "task_verified": false,
+      "passed": true,
+      "assertions": {
+        "last_observation_assets_exist": true,
+        "one_dispatch": true,
+        "explicit_denial_observed": true,
+        "input_log_matches_dispatches": true,
+        "browser_identity_recorded": true
+      },
+      "dispatches": 1,
+      "error_code": "verification_timeout",
+      "failure_category": "verification_failure",
+      "application_cause": "permission_denied",
+      "evidence_directory": "output\\week2-friday\\desktop-full\\open_file-permission_denied\\observations\\0006_step01_after3",
+      "elapsed_seconds": 2.482429,
+      "summary": "output\\week2-friday\\desktop-full\\open_file-permission_denied\\session\\summary.json"
+    }
+  ],
+  "desktop_validation": "passed",
+  "desktop_normal_verified": 5,
+  "real_model_validation": "pending",
+  "project_check": "output\\project-checks\\20261027_223734_623723\\summary.json",
+  "full_project_passed": true,
+  "full_project_tests": 211,
+  "all_passed": true
+}

@@ -1,0 +1,277 @@
+{
+  "created_at_utc": "2026-10-27T04:50:37.983531+00:00",
+  "directory": "output/week2-wednesday/20261027T045037_365812Z",
+  "unit_test_count": 30,
+  "unit_tests_passed": true,
+  "unit_cases": [
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_clarify_and_done_do_not_contain_hidden_work",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_compiled_workflow_matches_existing_demo_contract",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_cycles_forward_self_and_unknown_dependencies_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_default_step_names_are_global_not_restarted_per_subtask",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_duplicate_dependencies_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_duplicate_step_names_across_subtasks_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_duplicate_subtask_ids_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_empty_task_or_subtask_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_fields_for_a_different_action_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_invalid_step_limits_fail_before_request",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_later_invalid_action_rejects_the_entire_plan",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_later_unknown_state_field_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_missing_independent_postcondition_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_model_cannot_disable_action_transition",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_no_state_adapter_cannot_produce_action_plan",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_non_string_dependency_does_not_escape_classified_error",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_step_limit_is_applied_to_the_whole_plan",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_strict_json_rejects_fences_duplicates_and_nonfinite_values",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_subtask_count_is_bounded",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_three_subtasks_compile_to_ordered_actions_and_workflow",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_unknown_key_and_single_key_hotkey_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_wait_press_hotkey_and_typing_have_explicit_arguments",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningContractTests.test_window_override_and_raw_coordinates_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_clarification_exports_no_workflow",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_interrupted_planning_records_abort_and_no_candidate",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_invalid_last_step_never_exports_a_partial_workflow",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_langchain_exports_task_actions_and_workflow_without_execution",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_planning_cli_demo_returns_plan_ready",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_planning_cli_reports_too_small_step_limit",
+      "passed": true
+    },
+    {
+      "case": "tests.test_planner.PlanningPipelineTests.test_planning_prompt_has_limit_history_and_caller_state_contract",
+      "passed": true
+    }
+  ],
+  "integration_cases": [
+    {
+      "case": "three_step_plan",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "plan_ready",
+      "actual_status": "plan_ready",
+      "expected_error": null,
+      "actual_error": null,
+      "request_attempts": 1,
+      "candidate_exported": true,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/three_step_plan/summary.json"
+    },
+    {
+      "case": "wait_only_plan",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "plan_ready",
+      "actual_status": "plan_ready",
+      "expected_error": null,
+      "actual_error": null,
+      "request_attempts": 1,
+      "candidate_exported": true,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/wait_only_plan/summary.json"
+    },
+    {
+      "case": "dependency_cycle",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "expected_error": "invalid_dependency",
+      "actual_error": "invalid_dependency",
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/dependency_cycle/summary.json"
+    },
+    {
+      "case": "invalid_last_action",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "expected_error": "invalid_task_plan",
+      "actual_error": "invalid_task_plan",
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/invalid_last_action/summary.json"
+    },
+    {
+      "case": "unknown_state_field",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "expected_error": "unsupported_state_field",
+      "actual_error": "unsupported_state_field",
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/unknown_state_field/summary.json"
+    },
+    {
+      "case": "step_limit",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "expected_error": "plan_limit_exceeded",
+      "actual_error": "plan_limit_exceeded",
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/step_limit/summary.json"
+    },
+    {
+      "case": "clarify",
+      "kind": "replay",
+      "passed": true,
+      "expected_status": "clarify",
+      "actual_status": "clarify",
+      "expected_error": null,
+      "actual_error": null,
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/clarify/summary.json"
+    },
+    {
+      "case": "workflow_cli_validation",
+      "kind": "existing_workflow_cli_structure_only",
+      "passed": true,
+      "return_code": 0
+    },
+    {
+      "case": "http_ok",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_status": "plan_ready",
+      "actual_status": "plan_ready",
+      "expected_error": null,
+      "actual_error": null,
+      "request_attempts": 1,
+      "candidate_exported": true,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/http_ok/summary.json",
+      "transport": {
+        "route": "ok",
+        "image_bytes_match": true,
+        "task_text_present": true,
+        "planning_prompt_present": true,
+        "authorization_matches": true
+      }
+    },
+    {
+      "case": "http_cycle",
+      "kind": "loopback_http_fixture",
+      "passed": true,
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "expected_error": "invalid_dependency",
+      "actual_error": "invalid_dependency",
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/http_cycle/summary.json",
+      "transport": {
+        "route": "cycle",
+        "image_bytes_match": true,
+        "task_text_present": true,
+        "planning_prompt_present": true,
+        "authorization_matches": true
+      }
+    },
+    {
+      "case": "monday_sample",
+      "kind": "real_public_image_with_replay_reply",
+      "passed": true,
+      "expected_status": "clarify",
+      "actual_status": "clarify",
+      "expected_error": null,
+      "actual_error": null,
+      "request_attempts": 1,
+      "candidate_exported": false,
+      "summary": "output/week2-wednesday/20261027T045037_365812Z/monday_sample/summary.json"
+    }
+  ],
+  "desktop_input_sent": false,
+  "real_model_validation": "pending",
+  "backend": "replay and synthetic loopback HTTP service, not model inference",
+  "project_check": "output/project-checks/20261027_155029_508798/summary.json",
+  "full_project_tests": 148,
+  "full_project_passed": true,
+  "all_passed": true
+}

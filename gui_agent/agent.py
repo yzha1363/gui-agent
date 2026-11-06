@@ -24,9 +24,11 @@ For duplicate text, clarify unless the task identifies a specific occurrence (1-
 Do not include window_title, executable flags or any additional top-level fields.'''
 
 
-def messages_for(prepared):
+def messages_for(prepared, system_prompt=SYSTEM):
     context = {'history_before': prepared['history'], 'image': prepared['image']}
-    return [{'role': 'system', 'content': SYSTEM},
+    if 'live_observation' in prepared:
+        context['live_observation'] = prepared['live_observation']
+    return [{'role': 'system', 'content': system_prompt},
             {'role': 'user', 'content': [
                 {'type': 'text', 'text': 'Task instruction:\n' + prepared['instruction']},
                 {'type': 'text', 'text': 'Caller contract:\n' + json.dumps({
@@ -36,8 +38,21 @@ def messages_for(prepared):
 
 
 class GuiAgent:
+    mode = 'propose'
+    system_prompt = SYSTEM
+    result_filename = 'proposal.json'
+    result_key = 'proposal'
+    response_ready_status = 'propose'
+    summary_ready_status = 'proposal_ready'
+
     def __init__(self, client):
         self.client = client
+
+    def validate_response(self, content, task):
+        return validate_proposal(content, task.window_title, task.state_fields)
+
+    def save_result(self, result, save):
+        save(self.result_filename, result)
 
     def run(self, task, output):
         directory = Path(output)
@@ -57,17 +72,18 @@ class GuiAgent:
                    'client_kind': self.client.kind, 'framework': 'langchain-core',
                    'desktop_input_sent': False, 'task_verified': False, 'execution_eligible': False,
                    'model_service_response_received': False, 'real_model_validation': 'pending'}
+        summary['mode'] = self.mode
 
         def prepare(value):
             prepared = value.prepare()
             (directory / 'input.png').write_bytes(prepared['image_bytes'])
             save('request.json', {k: v for k, v in prepared.items() if k not in {'image_bytes', 'data_url'}})
-            return messages_for(prepared)
+            return messages_for(prepared, self.system_prompt)
 
         def parse(response):
             save('response.json', response)
-            result = validate_proposal(response['content'], task.window_title, task.state_fields)
-            save('proposal.json', result)
+            result = self.validate_response(response['content'], task)
+            self.save_result(result, save)
             return result
 
         def call(messages):
@@ -80,8 +96,8 @@ class GuiAgent:
         try:
             with tracing_context(enabled=False):
                 result = chain.invoke(task, config={'callbacks': []})
-            summary.update(status='proposal_ready' if result['status'] == 'propose' else result['status'],
-                           proposal=result)
+            summary.update(status=self.summary_ready_status if result['status'] == self.response_ready_status else result['status'])
+            summary[self.result_key] = result
         except KeyboardInterrupt:
             summary.update(status='aborted', error={'code': 'user_aborted',
                                                   'message': 'Model request interrupted; no automatic retry.'})
