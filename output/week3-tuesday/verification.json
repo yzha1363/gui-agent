@@ -1,0 +1,171 @@
+{
+  "created_at_utc": "2026-10-30T13:10:45.607460+00:00",
+  "directory": "output/week3-tuesday/20261030T131044_700421Z",
+  "unit_test_count": 18,
+  "unit_cases": [
+    {
+      "case": "tests.test_lora_trainer.AccumulationTests.test_frozen_weights_remain_without_gradients",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.AccumulationTests.test_no_supervised_tokens_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.AccumulationTests.test_nonfinite_loss_stops_before_optimizer_update",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.AccumulationTests.test_short_last_window_is_not_divided_by_configured_accumulation",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.AccumulationTests.test_unequal_token_lengths_match_combined_token_mean_gradient",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.CheckpointTests.test_changed_dataset_and_config_are_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.CheckpointTests.test_existing_checkpoint_cannot_be_overwritten",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.CheckpointTests.test_missing_checkpoint_file_is_not_accepted",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.CheckpointTests.test_resume_with_dropout_matches_uninterrupted_next_update",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.CheckpointTests.test_roundtrip_restores_optimizer_scheduler_and_all_rngs",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.CheckpointTests.test_tampered_optimizer_is_rejected_before_deserialization",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.SamplerAndValidationTests.test_fixed_test_split_cannot_enter_model_dataset",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.SamplerAndValidationTests.test_invalid_cursor_cannot_skip_or_replay_half_an_update",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.SamplerAndValidationTests.test_resume_offset_preserves_remaining_epoch_order",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.SamplerAndValidationTests.test_sampler_does_not_consume_global_random_state",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.SamplerAndValidationTests.test_validation_uses_token_weighting_and_restores_training_mode",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.TrainingConfigTests.test_config_fingerprint_changes_with_training_hyperparameters",
+      "passed": true
+    },
+    {
+      "case": "tests.test_lora_trainer.TrainingConfigTests.test_nan_boolean_and_unsupported_batches_are_rejected",
+      "passed": true
+    }
+  ],
+  "unit_tests_passed": true,
+  "data_audit": {
+    "passed": true,
+    "records_checked": 12,
+    "task_leakage": false,
+    "image_leakage": false,
+    "legacy_holdout_in_training": false,
+    "split_files_match_records": true,
+    "hashes_verified": true
+  },
+  "config": "configs/week3-tuesday.json",
+  "full_training": {
+    "summary": "D:\\study\\实习\\output\\week3-tuesday\\full-initial\\summary.json",
+    "passed": true,
+    "checks": {
+      "completed": true,
+      "config_and_dataset_match": true,
+      "planned_steps": true,
+      "all_losses_gradients_finite": true,
+      "token_weighted_loss": true,
+      "no_validation_or_test_in_training": true,
+      "validation_only": true,
+      "no_desktop_or_fixed_test_model_use": true,
+      "changed_adapter": true,
+      "each_epoch_covers_training_once": true,
+      "validation_token_mean": true,
+      "assistant_only_supervision": true,
+      "reload_verified": true,
+      "adapter_hashes": true,
+      "generation_uses_training_only": true
+    },
+    "global_step": 12,
+    "steps_this_process": 12,
+    "initial_validation_loss": 3.357202999293804,
+    "final_validation_loss": 3.313339412212372,
+    "best_validation_loss": 3.312987707555294,
+    "best_step": 8,
+    "peak_allocated_mib": 948.71,
+    "peak_reserved_mib": 1116.0,
+    "generated_action_json_valid": false
+  },
+  "resumed_training": {
+    "summary": "D:\\study\\实习\\output\\week3-tuesday\\recovery-resumed\\summary.json",
+    "passed": true,
+    "checks": {
+      "completed": true,
+      "config_and_dataset_match": true,
+      "planned_steps": true,
+      "all_losses_gradients_finite": true,
+      "token_weighted_loss": true,
+      "no_validation_or_test_in_training": true,
+      "validation_only": true,
+      "no_desktop_or_fixed_test_model_use": true,
+      "changed_adapter": true,
+      "each_epoch_covers_training_once": true,
+      "validation_token_mean": true,
+      "assistant_only_supervision": true,
+      "reload_verified": true,
+      "adapter_hashes": true,
+      "generation_uses_training_only": true
+    },
+    "global_step": 12,
+    "steps_this_process": 7,
+    "initial_validation_loss": 3.357202999293804,
+    "final_validation_loss": 3.313339412212372,
+    "best_validation_loss": 3.312987707555294,
+    "best_step": 8,
+    "peak_allocated_mib": 948.46,
+    "peak_reserved_mib": 1286.0,
+    "generated_action_json_valid": false
+  },
+  "controlled_stop_summary": "D:\\study\\实习\\output\\week3-tuesday\\recovery-partial\\summary.json",
+  "recovery_checks": {
+    "controlled_stop_at_step5": true,
+    "resumed_at_step5_with_seven_new_steps": true,
+    "all_adapter_tensors_exact": true,
+    "sample_order_exact": true,
+    "training_losses_exact": true,
+    "learning_rates_exact": true,
+    "optimizer_tensors_exact": true,
+    "torch_rng_exact": true,
+    "python_numpy_rng_exact": true,
+    "scheduler_exact": true,
+    "best_adapter_exact": true
+  },
+  "project_check": "output\\project-checks\\20261031_000745_177718\\summary.json",
+  "full_project_passed": true,
+  "full_project_tests": 250,
+  "model_quality_evaluation": "pending",
+  "nim_validation": "pending",
+  "fixed_test_model_use": false,
+  "all_passed": true
+}

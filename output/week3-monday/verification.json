@@ -1,0 +1,166 @@
+{
+  "created_at_utc": "2026-10-30T12:37:39.192581+00:00",
+  "directory": "output/week3-monday/20261030T123737_871347Z",
+  "unit_test_count": 21,
+  "unit_cases": [
+    {
+      "case": "tests.test_training.AssistantMaskTests.test_all_prefix_and_image_labels_are_ignored",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.AssistantMaskTests.test_answer_and_untrusted_context_are_absent_from_inference_prefix",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.AssistantMaskTests.test_eos_is_supervised_even_if_the_prompt_uses_the_same_token",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.AssistantMaskTests.test_long_sequences_are_rejected_without_truncating_visual_tokens",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.AssistantMaskTests.test_processor_without_images_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.AssistantMaskTests.test_unicode_and_significant_whitespace_survive_label_encoding",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.LocalModelContractTests.test_cpu_fallback_and_extra_steps_are_not_silently_accepted",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.LocalModelContractTests.test_live_and_reloaded_probes_use_identical_autocast",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.LocalModelContractTests.test_model_file_tampering_is_detected_before_loading",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.LocalModelContractTests.test_revision_mismatch_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_dom_targets_are_excluded_without_fabricating_points",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_excluded_records_can_bridge_two_action_tasks",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_fewer_than_three_independent_groups_is_rejected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_fixed_splits_are_order_independent_and_preserve_heldout",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_group_leakage_is_detected_even_with_updated_file_hashes",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_image_tampering_is_detected",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_out_of_bounds_training_label_is_not_silently_accepted",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_real_output_build_audit_and_byte_reproduction",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_same_image_cannot_cross_splits_under_different_task_ids",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_source_prompts_and_verification_claims_are_not_training_inputs",
+      "passed": true
+    },
+    {
+      "case": "tests.test_training.TrainingDataTests.test_split_file_omissions_are_detected",
+      "passed": true
+    }
+  ],
+  "unit_tests_passed": true,
+  "dataset": "D:\\study\\实习\\data\\week3\\monday-v1",
+  "dataset_counts": {
+    "train": 8,
+    "test": 2,
+    "validation": 2
+  },
+  "excluded_records": 64,
+  "exclusion_reasons": {
+    "unverified_dom_grounding": 20,
+    "non_action_record": 12,
+    "no_visual_demonstration": 32
+  },
+  "data_audit": {
+    "passed": true,
+    "records_checked": 12,
+    "task_leakage": false,
+    "image_leakage": false,
+    "legacy_holdout_in_training": false,
+    "split_files_match_records": true,
+    "hashes_verified": true
+  },
+  "reproduction_same_files": true,
+  "preflight_summary": "D:\\study\\实习\\output\\week3-monday\\preflight-corrected\\summary.json",
+  "preflight_checks": {
+    "status_completed": true,
+    "real_model_and_one_step": true,
+    "data_identity": true,
+    "sample_is_training": true,
+    "finite_positive_gradient": true,
+    "frozen_base_no_grad": true,
+    "lora_weights_changed": true,
+    "assistant_only_labels": true,
+    "image_used": true,
+    "saved_adapter_equivalent": true,
+    "adapter_hashes_verified": true,
+    "no_desktop_input": true,
+    "source_package_complete": true
+  },
+  "preflight_attempts": [
+    {
+      "summary": "output\\week3-monday\\preflight-initial\\summary.json",
+      "status": "failed",
+      "success": false,
+      "optimizer_steps_completed": 1,
+      "error": {
+        "code": "RuntimeError",
+        "message": "Adapter reload equivalence failed.",
+        "category": "preflight_failure"
+      }
+    },
+    {
+      "summary": "D:\\study\\实习\\output\\week3-monday\\preflight-corrected\\summary.json",
+      "status": "completed",
+      "success": true,
+      "optimizer_steps_completed": 1,
+      "error": null
+    }
+  ],
+  "local_model_preflight": "passed",
+  "baseline_action_json_valid": false,
+  "model_quality_evaluation": "pending",
+  "nim_validation": "pending",
+  "training_step": {
+    "loss": 2.7958600521087646,
+    "gradient_norm_before_clip": 1.0391433238983154,
+    "trainable_parameters": 230400,
+    "changed_lora_tensors": 60,
+    "peak_allocated_mib": 887.41,
+    "peak_reserved_mib": 956.0
+  },
+  "project_check": "output\\project-checks\\20261030_233658_093919\\summary.json",
+  "full_project_passed": true,
+  "full_project_tests": 232,
+  "all_passed": true
+}
